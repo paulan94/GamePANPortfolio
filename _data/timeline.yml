@@ -1,0 +1,40 @@
+- title: Founding Game Designer & Programmer - Rev Dev Studios
+  from: 2020
+  to: present
+  description: Managed a team of 3 engineers to create 2 prototype games and a fully released game in Unity.
+               Learned and implemented skills such as sound design, lighting, art direction, animation rigging, etc.
+               Built a turn based action-RPG game and a multiplayer PvP game from the ground up.
+               Currently designing and prototyping a turn-based mobile RPG game to release on IOS and Android in Q4-2022.
+
+
+- title: Software Engineer - Meta/Facebook
+  from: 2021
+  to: 2022
+  description: Working as a (PHP) backend engineer interfacing with Oculus Quest 2 payments processing portal. 
+               Participating in oncall rotations to maintain, debug and address failures in any part of the shop fulfillment process.
+
+- title: Gameplay Programmer (UE4) - Turn Me Up Games
+  from: 2021
+  to: 2021
+  description: 3 month contract working with Unreal Engine 4 for TMU's unannounced original IP game. 
+               TMU has released ports of popular games such as Borderlands, Tony Hawk's Pro Skater 1+2, Journey to the Savage Planet, and more.
+               Worked on navigation & pathfinding systems for Player/NPC interactions as well as  AI controllers in blueprints.
+               Project Management via ClickUp and SVN for version control.
+
+
+
+- title: Software Engineer -  TrueAccord
+  from: 2019
+  to: 2021
+  description: Core engineer on TrueAccord’s scalability & product operations teams. 
+               Refactored legacy Jenkins CI/CD indexing jobs to use elasticsearch to decrease build times by over 1000%.
+               Developed and maintained software in Scala & Python to automate helpdesk services in Twilio and Zendesk. 
+
+
+- title: Software Engineer -  Boeing
+  from: 2017
+  to: 2018
+  description: Engineered the core functionality for TCP/IP & UDP connections in Python/C++, enabling the US Navy to send,    
+               process, and compress .wav audio data using Python/XML for detecting enemies in anti-submarine warfare. 
+               Built and refactored unit tests in Python and proprietary automated testing scripts, in one case increasing the  
+               efficiency of a production build by reducing its overall file size by 54%.  

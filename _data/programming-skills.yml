@@ -1,0 +1,19 @@
+- name: Unity/C#
+  percentage: 90
+  color: danger
+
+- name: Scala
+  percentage: 80
+  color: info
+
+- name: Java
+  percentage: 75
+  color: warning
+
+- name: Unreal Engine/C++/Blueprints
+  percentage: 70
+  color:
+
+- name: Python
+  percentage: 70
+  color: secondary
