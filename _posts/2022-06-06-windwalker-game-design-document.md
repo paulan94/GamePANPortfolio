@@ -27,4 +27,10 @@ The biggest key element in Windwalker is Combat. The core gameplay progression r
 {% include elements/figure.html image="https://i.imgur.com/86NiNZ8.png" caption="Current Combat Scene" %}
 
 
+### Key Takeaways
+The GDD is still being iterated on, but these are a few key takeaways I've gathered from writing my first GDD.
+- Be patient, and lay the groundwork before diving headfirst into designing and developing. The entire game's vision won't be apparent for at least a few months, so just constantly iterate and improve upon key elements that make the game fun. As we defined the key elements, we were able to divide those things into smaller subcategories and piece them all together.
+- Lower scope, lower scope! As a very small indie studio, we have limited resources. Spending money on some assets is a good use of money to save us time so we can focus on game mechanics and design.
+- Collaborate with your team to update the GDD. Everyone has a unique perspective on what the game should be like, so it's important to sync up and get on the same page. Good documentation leads to less confusion and headache.
+
 {% include elements/figure.html image="https://i.imgur.com/anh2yaN.png" caption="Proof a GDD exists!" %}
