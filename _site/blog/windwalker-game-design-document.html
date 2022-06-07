@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Windwalker Game Design Document">
+  <meta property="og:description" content="Getting Started on my first ever Game Design Document">
+  <meta property="og:image" content="https://i.imgur.com/bweGHEE.jpg">
+
+  <title>Windwalker Game Design Document</title>
+  <meta name="description" content="Getting Started on my first ever Game Design Document">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+  <a class="navbar-brand" href="/"><h5><b>Pauls Portfolio</b></h5></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-1x fa-bars text-themed"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/projects/">Projects</a>
+
+      <a class="nav-item nav-link active" href="/blog/">Blog</a>
+
+      <a class="nav-item nav-link " href="/about/">About</a>
+
+      
+
+      <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+    </div>
+  </div>
+
+</nav>
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h1><b>Windwalker Game Design Document</b></h1>
+
+<p class="post-metadata text-muted">
+  06 June 2022 -  
+  <b>2 mins read time</b>
+
+  <br>Tags: 
+    
+    <a class="text-decoration-none no-underline" href="/blog/tags#game-design">
+      <span class="tag badge badge-pill text-primary border border-primary">Game Design</span>
+    </a>
+    
+    <a class="text-decoration-none no-underline" href="/blog/tags#documentation">
+      <span class="tag badge badge-pill text-primary border border-primary">Documentation</span>
+    </a>
+    </p>
+
+<h2 id="welcome-to-my-first-post">Welcome to my First Post</h2>
+
+<p>In this post, I’ll be going over some game design terms and how we’ve been applying them for our upcoming mobile RPG “Windwalker.”</p>
+
+<h2 id="determinism--non-determinism">Determinism &amp; Non Determinism</h2>
+<p>Windwalker, generally speaking, is a more non-deterministic game, in that given any one player’s state, their outcomes will differ based on multiple factors of randomness. Performing an action at a particular state may derive different outcomes. This is especially true in Windwalker in areas such as monster encounters, loot systems, combat damage randomness, and pet taming. In monster encounters, there are some deterministic factors such as determining which types of monsters can spawn in certain zones. The actual monster encounters however will differ based on their unique spawn chances. Pokemon does this as well in a similar vein.</p>
+
+<figure class="figure w-100">
+  <img src="https://gamerpaul648468864.files.wordpress.com/2022/06/ww-deterministic-pet-spawn-locations.png" class="figure-img img-fluid rounded" alt="Deterministic pet spawn locations in red spheres" /><figcaption class="figure-caption text-center">Deterministic pet spawn locations in red spheres</figcaption></figure>
+
+<figure class="figure w-100">
+  <img src="https://gamerpaul648468864.files.wordpress.com/2022/06/machinations-loot-rarity.png?w=1024" class="figure-img img-fluid rounded" alt="Non-Deterministic Loot System in WindWalker" /><figcaption class="figure-caption text-center">Non-Deterministic Loot System in WindWalker</figcaption></figure>
+
+<h2 id="intransitive-properties">Intransitive Properties</h2>
+<p>Intrasitive properties are defined by outcomes depending on simultaneous choices between two parties, usually the player and their enemy. Windwalker’s core combat revolves around a turn-based combat system against powerful creatures. In the first few iterations, our enemy AI would randomly choose between basic attacks, and skills they were programmed to use. The problem with this was that enemies could potentially use skills in situations that offers no benefit to themselves, so combat felt irregular and clunky. For example: enemies would heal themselves when they had full HP. In the latest iterations, enemies will now weight their actions based on the combat state. Enemies will use abilities in a more “smart” way, which makes combat much more interesting. They will heal themselves when their HP is low, use multi-targeted abilities when they face more than one opposing foe, etc. With this context, a intransitive property evident in Windwalker is in this combat system. Combat outcomes are determined simultaneously by player combat decisions against the enemy combat decisions.</p>
+
+<figure class="figure w-100">
+  <img src="https://gamerpaul648468864.files.wordpress.com/2022/06/ww-intrasitive.png" class="figure-img img-fluid rounded" alt="Player buffs defense stats anticipating a big attack from the enemy." /><figcaption class="figure-caption text-center">Player buffs defense stats anticipating a big attack from the enemy.</figcaption></figure>
+
+<h2 id="symmetry-vs-asymmetry">Symmetry vs Asymmetry</h2>
+<p>In multiplayer games like chess, player’s start with the same set of pieces in the same relative positions. This is an example of symmetry, although you could argue that it isn’t symmetric because the white player always goes first. In Left 4 Dead, players can play as either humans, or zombies. This is an example of Asymmetry, since both parties have completely different characteristics. Windwalker has a PvP mode that is not live-time. This is to say that PvP encounters consist of a player fighting a snapshot of another player. I would argue that Windwalker is symmetric in this sense, since all players start the game as a level 1 Novice, and they then choose customization options like equipment/skills/classes/pets/etc.</p>
+
+<figure class="figure w-100">
+  <img src="https://gamerpaul648468864.files.wordpress.com/2022/06/ww-starting-area.png" class="figure-img img-fluid rounded" alt="Starting Area for all new players" /><figcaption class="figure-caption text-center">Starting Area for all new players</figcaption></figure>
+
+
+
+
+</div>
+  </main>
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>Paul An</strong>
+  </small>
+
+  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="mailto:paulan94@gmail.com"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#db4437'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.github.com/paulan94"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#333333'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-github fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.linkedin.com/in/cspaulan"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#007bb5'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-linkedin-in fa-1x"></i>
+    </a>
+
+</div><small id="attribution">
+    theme <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a>
+  </small>
+
+</footer>
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+
+</html>
