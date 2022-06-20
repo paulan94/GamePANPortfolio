@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Introduction to Game Economy",
+      "category" : "",
+      "tags"     : "Economy",
+      "url"      : "/blog/mtga-game-economy",
+      "date"     : "2022-06-20 00:00:00 -0700"
+    } ,
+  
+    {
       "title"    : "Windwalker Skill Design",
       "category" : "",
       "tags"     : "Game Design, Documentation",

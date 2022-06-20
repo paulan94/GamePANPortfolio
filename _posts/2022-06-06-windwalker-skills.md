@@ -32,7 +32,7 @@ Passive skills provide additional "passive" bonuses to players. Warriors deal mo
 
 
 ## Offensive Skills
-All classes need to have some form of offensive skill with a few exceptions. Since WW is a single player game with a heavy emphasis on combat, each class should be able to defeat monsters via some form of damage dealing. The only exceptions would be the Beast Master class, who can fortify pets to indirectly deal damage, or some of the mage classes, who can deal damage via Buffs/Debuffs covered in the next section. Offensive skills are generally accompanied by a secondary or even tercery effect, like inflicting a status effect, or having higher crit chance, etc.
+All classes need to have some form of offensive skill with a few exceptions. Since WW is a single player game with a heavy emphasis on combat, each class should be able to defeat monsters via some form of damage dealing. The only exceptions would be the Beast Master class, who can fortify pets to indirectly deal damage, or some of the mage classes, who can deal damage via Buffs/Debuffs covered in the next section. Offensive skills are generally accompanied by a secondary or even tertiary effect, like inflicting a status effect, or having higher crit chance, etc.
 
 
 {% include elements/figure.html image="https://i.imgur.com/2XGSn5B.png" caption="Some of the offensive skills in Windwalker" %}
