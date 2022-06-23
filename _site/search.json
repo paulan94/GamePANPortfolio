@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Windwalker Economy",
+      "category" : "",
+      "tags"     : "Economy, Deep Dive",
+      "url"      : "/blog/windwalker-economy-balancing",
+      "date"     : "2022-06-22 00:00:00 -0700"
+    } ,
+  
+    {
       "title"    : "Introduction to Game Economy",
       "category" : "",
       "tags"     : "Economy",

@@ -2,7 +2,7 @@
 title: Introduction to Game Economy
 tags: [Economy]
 style: fill
-color: info
+color: warning
 description: Breaking down economies in games.
 ---
 
