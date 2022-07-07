@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Windwalker Battle Pass Exercise",
+      "category" : "",
+      "tags"     : "Economy",
+      "url"      : "/blog/windwalker-battle-pass",
+      "date"     : "2022-07-06 00:00:00 -0700"
+    } ,
+  
+    {
       "title"    : "Windwalker Economy Pt. 2",
       "category" : "",
       "tags"     : "Economy, Deep Dive",
