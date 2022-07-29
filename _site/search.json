@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Enemy &amp; Boss AI Behaviour",
+      "category" : "",
+      "tags"     : "AI, Design",
+      "url"      : "/blog/enemy-boss-behaviours",
+      "date"     : "2022-07-28 00:00:00 -0700"
+    } ,
+  
+    {
       "title"    : "Single vs Multi-Currency Economies",
       "category" : "",
       "tags"     : "Economy",
