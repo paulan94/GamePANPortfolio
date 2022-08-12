@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Overhauling the Pet System",
+      "category" : "",
+      "tags"     : "Pets, Informal",
+      "url"      : "/blog/simplifying-pets",
+      "date"     : "2022-08-11 00:00:00 -0700"
+    } ,
+  
+    {
       "title"    : "Enemy &amp; Boss AI Behaviour",
       "category" : "",
       "tags"     : "AI, Design",
