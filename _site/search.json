@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Balancing Stats, Skills, Items",
+      "category" : "",
+      "tags"     : "Balancing",
+      "url"      : "/blog/game-balancing",
+      "date"     : "2022-08-19 00:00:00 -0700"
+    } ,
+  
+    {
       "title"    : "Overhauling the Pet System",
       "category" : "",
       "tags"     : "Pets, Informal",
