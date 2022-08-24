@@ -1,15 +1,17 @@
+
+- name: Economy Design
+  percentage: 75
+  color:
+
 - name: System Design
+  percentage: 75
   color: danger
 
 - name: Combat Design
+  percentage: 70
   color: info
 
 - name: Encounter Design
+  percentage: 70
   color: warning
-
-- name: Economy Design
-  color: 
-
-- name: Creature Design
-  color: secondary
-
+ 
