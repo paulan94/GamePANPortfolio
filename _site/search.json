@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Item Generation Weekend",
+      "category" : "",
+      "tags"     : "Content Generation, Balancing, Tweaking",
+      "url"      : "/blog/item-generation-weekend",
+      "date"     : "2022-09-04 00:00:00 -0700"
+    } ,
+  
+    {
       "title"    : "Balancing Stats, Skills, Items",
       "category" : "",
       "tags"     : "Balancing",
