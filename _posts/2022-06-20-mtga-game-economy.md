@@ -28,6 +28,10 @@ Another well received game, in Witcher 3- you receive crowns(coins) by killing m
 [History of the Bovine Defense Force](
 https://static.wikia.nocookie.net/witcher/images/3/34/Tw3_bovine_defense_force.jpg/revision/latest/scale-to-width-down/350?cb=20190804235202)
 
+#### Windwalker Economy Visualization
+
+{% include elements/figure.html image="https://i.imgur.com/uRE2ZIu.jpg" caption="Updated 09/06/2022" %}
+
 ### Further Learning
 
 [![Analyzing Battle Pass effects on monetization for 2 different games](https://i.ytimg.com/vi/EOhHYhoBovA/hqdefault.jpg?s…AFwAcABBg==&rs=AOn4CLCiEAZrIcRc1xv0c62EdoAE-coH9w)](https://www.youtube.com/watch?v=EOhHYhoBovA&ab_channel=GameMakers)

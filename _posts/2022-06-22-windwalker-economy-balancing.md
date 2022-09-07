@@ -78,7 +78,7 @@ In the old multiplier, I didn't think too much about how the item stats differed
 
 
 
-#### Resource Relationships 
+#### Resource Relationships
 I'm planning to balance resources in the game around item level and gold. This may prove to be more difficult with consumables, but we will begin this way.
 We can start by stating that each item level correlates to 10 gold.
 

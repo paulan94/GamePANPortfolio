@@ -94,14 +94,6 @@
       "tags"     : "Unity, C#, Game Design",
       "url"      : "/blog/windwalker-design",
       "date"     : "2022-06-06 00:00:00 -0700"
-    } ,
-  
-    {
-      "title"    : "Windwalker Combat",
-      "category" : "",
-      "tags"     : "Game Design, Documentation",
-      "url"      : "/blog/windwalker-combat",
-      "date"     : "2022-06-06 00:00:00 -0700"
     } 
   
 ]
