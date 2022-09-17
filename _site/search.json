@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Miscellaneous Changes",
+      "category" : "",
+      "tags"     : "Design",
+      "url"      : "/blog/misc-changes",
+      "date"     : "2022-09-17 00:00:00 -0700"
+    } ,
+  
+    {
       "title"    : "Item Generation Weekend",
       "category" : "",
       "tags"     : "Content Generation, Balancing, Tweaking",
