@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Simulating Level Up and Economy",
+      "category" : "",
+      "tags"     : "Design, Economy, Simulation",
+      "url"      : "/blog/machinations-economy-flow",
+      "date"     : "2022-09-22 00:00:00 -0700"
+    } ,
+  
+    {
       "title"    : "Miscellaneous Changes",
       "category" : "",
       "tags"     : "Design",
