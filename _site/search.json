@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Misc Changes Pt. 2",
+      "category" : "",
+      "tags"     : "Systems, UI, UX, ENV",
+      "url"      : "/blog/misc-changes2",
+      "date"     : "2022-10-03 00:00:00 -0700"
+    } ,
+  
+    {
       "title"    : "Creating Compelling Game Loops in Windwalker",
       "category" : "",
       "tags"     : "Design, Systems",
