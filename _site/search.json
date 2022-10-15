@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Updating an Older Game",
+      "category" : "",
+      "tags"     : "Android, Unity",
+      "url"      : "/blog/publishing-potty-game",
+      "date"     : "2022-10-15 00:00:00 -0700"
+    } ,
+  
+    {
       "title"    : "Misc Changes Pt. 2",
       "category" : "",
       "tags"     : "Systems, UI, UX, ENV",
