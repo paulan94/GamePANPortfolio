@@ -1,11 +1,19 @@
 [
   
     {
+      "title"    : "Revisting Skills and Updating UI/UX",
+      "category" : "",
+      "tags"     : "UI/UX, Skills",
+      "url"      : "/blog/UIUX-skills",
+      "date"     : "2022-11-16 00:00:00 -0800"
+    } ,
+  
+    {
       "title"    : "Windwalker Systems Overview",
       "category" : "",
       "tags"     : "Systems Design",
       "url"      : "/blog/windwalker-systems",
-      "date"     : "2022-10-22 00:00:00 -0700"
+      "date"     : "2022-10-24 00:00:00 -0700"
     } ,
   
     {
