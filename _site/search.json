@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Updating Design Docs",
+      "category" : "",
+      "tags"     : "Documentation",
+      "url"      : "/blog/updating-docs",
+      "date"     : "2022-11-23 00:00:00 -0800"
+    } ,
+  
+    {
       "title"    : "Revisting Skills and Updating UI/UX",
       "category" : "",
       "tags"     : "UI/UX, Skills",
