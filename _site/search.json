@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Approaching The Vertical Slice",
+      "category" : "",
+      "tags"     : "Design",
+      "url"      : "/blog/nearing-testing",
+      "date"     : "2022-12-09 00:00:00 -0800"
+    } ,
+  
+    {
       "title"    : "Updating Design Docs",
       "category" : "",
       "tags"     : "Documentation",
