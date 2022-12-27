@@ -1,5 +1,5 @@
 ---
-title: Approaching The Vertical Slice 
+title: Approaching Closed Testing
 tags: [Design]
 style: fill
 color: info

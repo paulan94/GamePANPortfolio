@@ -1,7 +1,15 @@
 [
   
     {
-      "title"    : "Approaching The Vertical Slice",
+      "title"    : "Balancing Combat through Testing",
+      "category" : "",
+      "tags"     : "Design",
+      "url"      : "/blog/combat-balancing",
+      "date"     : "2022-12-26 00:00:00 -0800"
+    } ,
+  
+    {
+      "title"    : "Approaching Closed Testing",
       "category" : "",
       "tags"     : "Design",
       "url"      : "/blog/nearing-testing",
