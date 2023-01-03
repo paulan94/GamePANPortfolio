@@ -50,8 +50,6 @@ The initial testing phase allowed me to take note of multiple issues with our co
 [Ranger](https://www.youtube.com/watch?v=rcvHQSIDzO8&ab_channel=RevDevStudios )\
 [Warrior](https://www.youtube.com/watch?v=GLTC2c3tuW0&ab_channel=RevDevStudios )
 
-## What's Next
-
 
 Thanks for reading!
 
