@@ -5,6 +5,7 @@ style: fill
 color: danger
 description: Another week of combat testing and balancing
 ---
+[Digest this post in Video Form Here!](https://www.youtube.com/watch?v=RFx0X3cN-w8&ab_channel=RevDevStudios)
 
 ## Intro
 
@@ -61,6 +62,7 @@ Summoning skills were also seemingly unbalanced. Summoned units had ridiculously
 {% include elements/figure.html image="https://i.imgur.com/XKNHLv6.png" caption="Random pet in red, and skill cooldown indicators in blue" %}
 
 
+[Digest this post in Video Form Here!](https://www.youtube.com/watch?v=RFx0X3cN-w8&ab_channel=RevDevStudios)
 
 Thanks for reading!
 
