@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Automated Combat Testing",
+      "category" : "",
+      "tags"     : "combat, design",
+      "url"      : "/blog/automated-testing",
+      "date"     : "2023-03-11 00:00:00 -0800"
+    } ,
+  
+    {
       "title"    : "A note on Monetization",
       "category" : "",
       "tags"     : "$$$",
