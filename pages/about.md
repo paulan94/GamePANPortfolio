@@ -12,6 +12,7 @@ I'm a game designer with a highly technical background in programming. I've work
 
 Check out my [Game Dev Highlight Reel](https://www.youtube.com/watch?v=xXlxTf8kA0w&ab_channel=RevDevStudios)
 
+Download my [Resume](https://drive.google.com/file/d/1itMwjrZatULBWbLOL8QUnArBerhUMkK9/view?usp=sharing)
 
 <div class="row">
 {% include about/timeline.html %}
