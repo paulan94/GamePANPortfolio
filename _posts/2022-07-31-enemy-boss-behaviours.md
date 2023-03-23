@@ -62,6 +62,6 @@ With this groundwork set, let's move on to our AI in combat.
 - **Bosses**: The above logic is consistent with how our bosses will be fought, but we haven't solidified our boss designs. Still, we've created a strong combat system that will allow us to create unique boss encounters. IE: We can play with phases in boss fights, as well as design hard to find weaknesses via our varied damage elements, etc.
 
 	
-{% include elements/figure.html image="https://i.imgur.com/WB8riNB.png" caption="Windwalker Current Combat AI Move Decision Logic as of 8/12/22" %}
+{% include elements/figure.html image="https://i.imgur.com/WB8riNB.png" caption="Windwalker Current Combat AI Move Decision Logic as of 3/22/23" %}
 
 
