@@ -17,9 +17,11 @@ Windwalker is a 3d mobile (android) turn-based RPG built in Unity 2022 where pla
 We are currently in development, and slated to release in 2023. 
 
 
-## My Posts on Windwalker
+## My Blog Posts on Windwalker
 
-My favorite posts emboldened!
+Below are more long-form, detailed posts I've written about the various systems in Windwalker, and the development process.
+
+**Bold** posts are my favorite posts.
 
 - [Automated Combat Testing](https://paulan94.github.io/GamePANPortfolio/blog/automated-testing)
 - [Monetization](https://paulan94.github.io/GamePANPortfolio/blog/note-monetization)
