@@ -235,7 +235,7 @@
     {
       "title"    : "Factory Reset",
       "category" : "",
-      "tags"     : "Portfolio",
+      "tags"     : "Factory Reset, Portfolio",
       "url"      : "/blog/factory-portfolio",
       "date"     : "2022-06-01 00:00:00 -0700"
     } ,
@@ -243,23 +243,23 @@
     {
       "title"    : "Elwood",
       "category" : "",
-      "tags"     : "Portfolio",
+      "tags"     : "Elwood, Portfolio",
       "url"      : "/blog/elwood-portfolio",
       "date"     : "2022-06-01 00:00:00 -0700"
     } ,
   
     {
-      "title"    : "dog",
+      "title"    : "dog (Bao Edition)",
       "category" : "",
-      "tags"     : "Portfolio",
+      "tags"     : "dog, Portfolio",
       "url"      : "/blog/dog-portfolio",
       "date"     : "2022-06-01 00:00:00 -0700"
     } ,
   
     {
-      "title"    : "dfwp",
+      "title"    : "Deathfall Wolfpine",
       "category" : "",
-      "tags"     : "Portfolio",
+      "tags"     : "DFWP, Portfolio",
       "url"      : "/blog/dfwp-portfolio",
       "date"     : "2022-06-01 00:00:00 -0700"
     } 

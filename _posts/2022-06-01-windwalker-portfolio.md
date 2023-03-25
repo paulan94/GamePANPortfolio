@@ -56,7 +56,7 @@ Below are more long-form, detailed posts I've written about the various systems 
 
 {% include elements/figure.html image="https://i.imgur.com/kniCrg1.png" caption="Player Inventory" %}
 
-{% include elements/figure.html image="https://i.imgur.com/kzW8sL8.png" caption="NPC Shop" %}
+{% include elements/figure.html image="https://i.imgur.com/kzW8sL8.png" caption="Our rotating NPC Shop to display some of our 100k+ items" %}
 
 {% include elements/figure.html image="https://i.imgur.com/TOLIMNO.png" caption="Combat Scene with Debug Options" %}
 
@@ -74,9 +74,9 @@ Below are more long-form, detailed posts I've written about the various systems 
 
 
 [<img src="https://i.imgur.com/8686HXB.jpg">](https://i.imgur.com/8686HXB.jpg)
-*Click image to enlarge*
+A battle pass exercise I did. *Click image to enlarge*
 
 [<img src="https://i.imgur.com/VqWj0Tl.jpg">](https://i.imgur.com/VqWj0Tl.jpg)
-*Click image to enlarge*
+A flow of resources diagram. *Click image to enlarge*
 
 {% include elements/figure.html image="https://i.imgur.com/x71Yb4f.png" caption="Tracking the various monsters on spreadsheets" %}
