@@ -8,7 +8,7 @@ description: My contributions to Windwalker
 
 ## The Game
 
-Windwalker is a 3d mobile (android) turn-based RPG built in Unity 2022 where players collect loot from combat and other encounters to cleanse the plague stirring in the fantastical world of Qubis. Enjoy a hand-crafted world, with thousands of unique items, creatures and acquire powerful pets to fight alongside you.
+Windwalker is a (PC) turn-based RPG built in Unity v.2022 where players collect loot from combat and other encounters to cleanse the plague stirring in the fantastical world of Qubis. Enjoy a hand-crafted world, with thousands of unique items, creatures and acquire powerful pets to fight alongside you.
 
 *We are currently in development, and slated to release in 2023.*
 
