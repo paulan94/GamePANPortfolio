@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Switching Platforms and Various Changes",
+      "category" : "",
+      "tags"     : "Steam, Design",
+      "url"      : "/blog/platform-change",
+      "date"     : "2023-05-25 00:00:00 -0700"
+    } ,
+  
+    {
       "title"    : "Automated Combat Testing",
       "category" : "",
       "tags"     : "combat, design",
