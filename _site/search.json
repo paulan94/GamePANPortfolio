@@ -241,6 +241,14 @@
     } ,
   
     {
+      "title"    : "Mortal Kombat Onslaught",
+      "category" : "",
+      "tags"     : "Mortal Kombat, Portfolio",
+      "url"      : "/blog/mko-portfolio",
+      "date"     : "2022-06-01 00:00:00 -0700"
+    } ,
+  
+    {
       "title"    : "Factory Reset",
       "category" : "",
       "tags"     : "Factory Reset, Portfolio",
