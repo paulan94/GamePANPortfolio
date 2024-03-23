@@ -1,7 +1,7 @@
 ### Site Settings ###
 title               : Pauls Portfolio
 description         : >-
-                      Game Designer & Engineer hailing from Los Angeles, California
+                      Game Designer hailing from Los Angeles, California
 # baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : paulan94/paulan94.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : YoussefRaafatNasry/portfolYOU

@@ -8,11 +8,9 @@ weight: 3
 # **About Me**
 
 Hi I am **{{ site.author.name }}** :wave:,<br>
-I'm a game designer with a highly technical background in programming. I've worked for big tech companies like Meta/Facebook and Boeing. I have experience as a software engineer in the tech hub of San Francisco, as a Game Engineer for smaller game studios, and currently work on my own game with some of my closest friends!
+I'm a game designer for NetherRealm Studios- currently working on Mortal Kombat: Onslaught. I've previously worked as a software engineer at Meta, Boeing, and other startups. In my free time I like to work on creating my own games, learn martial arts, other languages, and many more. Thanks for coming to my portfolio page!
 
-Check out my [Game Dev Highlight Reel](https://www.youtube.com/watch?v=xXlxTf8kA0w&ab_channel=RevDevStudios)
-
-Download my [Resume](https://drive.google.com/file/d/1itMwjrZatULBWbLOL8QUnArBerhUMkK9/view?usp=sharing)
+Download my [Resume](https://drive.google.com/file/d/1Bwoxn-dufjOzOy9CF-iEQH8iBCF-dGfT/view?usp=sharing)
 
 <div class="row">
 {% include about/timeline.html %}

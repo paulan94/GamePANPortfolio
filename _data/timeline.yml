@@ -1,6 +1,14 @@
+- title: Game Designer - NetherRealm Studios
+  from: 2023
+  to: 2024
+  description: Designed and implemented characters and character abilities using UE5 Blueprints.
+               Maintained and updated design docs, wiki pages for items and characters.
+               Worked with engineers, animators, artists, & producers to create a AAA Mortal Kombat mobile experience.
+
+
 - title: Game Designer & Programmer - Rev Dev Studios
   from: 2020
-  to: present
+  to: 2024
   description: Managed a team of 3 engineers to create 2 prototype games and a fully released game in Unity.
                Learned and implemented skills such as sound design, lighting, art direction, animation rigging, etc.
                Built a turn based action-RPG game and a multiplayer PvP game from the ground up.
