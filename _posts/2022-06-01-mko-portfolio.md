@@ -11,7 +11,7 @@ Mortal Kombat: Onslaught is a game that has been in the makings for 4+ years! It
 
 
 ## My Role
-I'm an associate game designer working on the combat team! I do most of my work implementing character abilities in UE5 Blueprints. I try to catch the near limitless edge cases when doing so, and work closely with other disciplines to ensure that each character is fleshed out to the desired AAA quality that Netherrealm Studios is known to produce. 
+I was an associate game designer working on the combat team! I did most of my work implementing character abilities in UE5 Blueprints. I tried to catch the near limitless edge cases when doing so, and worked closely with other disciplines to ensure that each character was fleshed out to the desired AAA quality that Netherrealm Studios is known to produce.
 
 
 ## Screenshots
