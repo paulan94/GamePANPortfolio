@@ -273,6 +273,14 @@
     } ,
   
     {
+      "title"    : "Unannounced Project",
+      "category" : "",
+      "tags"     : "Dropfake, Portfolio",
+      "url"      : "/blog/dropfake-portfolio",
+      "date"     : "2022-06-01 00:00:00 -0700"
+    } ,
+  
+    {
       "title"    : "dog (Bao Edition)",
       "category" : "",
       "tags"     : "dog, Portfolio",
