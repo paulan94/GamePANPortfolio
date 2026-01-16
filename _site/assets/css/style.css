@@ -90,7 +90,11 @@
 @keyframes four-anim { 50% { transform: scale(0.98); } }
 html { padding-left: calc(100vw - 100%); }
 
-body { font-family: "Poppins", sans-serif; }
+body { font-family: "Poppins", sans-serif; line-height: 1.6; }
+
+h1, h2, h3, h4, h5, h6 { font-weight: 600; line-height: 1.2; }
+
+.projects-header { padding-top: 2rem; }
 
 .badge { font-weight: 500; }
 
@@ -114,14 +118,20 @@ body { font-family: "Poppins", sans-serif; }
 @media only screen and (min-width: 768px) { #attribution { writing-mode: vertical-rl; transform: rotate(180deg); position: fixed; bottom: 120px; right: 22px; } }
 .github-footer { font-size: 10px; color: #6c757d; text-decoration: underline; text-decoration-color: yellow; text-align: right; margin-top: 4em; margin-right: 2em; }
 
-#container { display: inline-block; position: relative; width: 100%; }
+.hero-section { padding: 3rem 0; min-height: 70vh; display: flex; align-items: center; }
+
+.min-vh-75 { min-height: 75vh; }
+
+#container { display: inline-block; position: relative; width: 100%; max-width: 300px; margin: 0 auto; }
 
 #dummy { padding-top: 100%; /* 1:1 aspect ratio */ }
 
 #element { position: absolute; top: 0; bottom: 0; left: 0; right: 0; }
 
-.circle-image { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; object-position: center; }
+.circle-image { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; object-position: center; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12); border: 4px solid rgba(255, 255, 255, 0.2); }
 
+@media (max-width: 768px) { .hero-section { padding: 2rem 0; min-height: auto; }
+  .min-vh-75 { min-height: auto; } }
 .link-after, .nav-link::after, .navbar-brand::after, .nav-item.active::after { content: ""; display: block; height: 0.15em; background: #007bff; }
 
 .nav-link::after, .navbar-brand::after { width: 0; transition: width 0.35s; }
@@ -152,9 +162,14 @@ body { font-family: "Poppins", sans-serif; }
 .markdown-body table:not(.highlight) th { padding-top: 12px; padding-bottom: 12px; font-weight: 500; text-align: left; background-color: #007bff; color: white; }
 .markdown-body table:not(.highlight) tr:nth-child(even) { background-color: rgba(0, 0, 0, 0.05); }
 
-.project.card { border-radius: 15px; text-decoration: none !important; margin: 10px auto; transition: transform 400ms; }
-.project.card .card-img-top { border-radius: 15px 15px 0 0; }
-.project.card:hover:not(.post) { transform: translateY(-8px); box-shadow: -2px 8px 40px -12px rgba(0, 0, 0, 0.24); }
+.project.card { border-radius: 15px; text-decoration: none !important; margin: 0; height: 100%; display: flex; flex-direction: column; border: 1px solid rgba(0, 0, 0, 0.1); overflow: hidden; transition: transform 400ms, box-shadow 400ms; }
+.project.card .project-image-wrapper { width: 100%; height: 200px; overflow: hidden; background: #f5f5f5; }
+.project.card .card-img-top { width: 100%; height: 100%; object-fit: cover; border-radius: 15px 15px 0 0; transition: transform 400ms ease; }
+.project.card .card-body { display: flex; flex-direction: column; padding: 1.25rem; }
+.project.card .card-title { font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem; }
+.project.card .card-text { font-size: 0.9rem; line-height: 1.5; color: inherit; }
+.project.card:hover:not(.post) { transform: translateY(-8px); box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); }
+.project.card:hover:not(.post) .card-img-top { transform: scale(1.05); }
 
 .timeline-body { position: relative; border-radius: 0 15px 15px 0; padding: 5px 0; }
 .timeline-body:after { content: ""; width: 4px; height: 100%; background-color: #007bff; position: absolute; left: -4px; top: 0; }
@@ -355,9 +370,23 @@ body { font-family: "Poppins", sans-serif; }
 .highlight .cpf, [data-theme="dark"] pre .cpf, [data-theme="dark"] code.highlighter-rouge .cpf { color: #aaaaaa; font-style: italic; }
 
 /* Comment.PreprocFile */
-[data-theme="light"] #theme-toggler:before { content: "🌙"; }
-[data-theme="dark"] #theme-toggler:before { content: "🌞"; }
+.theme-toggle-wrapper { position: relative; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; padding: 0.5rem 1rem; margin: 0; border-radius: 6px; transition: all 0.2s ease; min-height: auto; height: 100%; }
+.theme-toggle-wrapper:hover { background-color: rgba(0, 0, 0, 0.05); }
+[data-theme="dark"] .theme-toggle-wrapper:hover { background-color: rgba(255, 255, 255, 0.1); }
+.theme-toggle-wrapper:active { transform: scale(0.95); }
 
+.theme-icon { font-size: 1.25rem; display: inline-flex; align-items: center; justify-content: center; width: auto; height: auto; animation: themePulse 2s ease-in-out infinite; transition: transform 0.3s ease; line-height: 1; margin-right: 0.5rem; }
+[data-theme="light"] .theme-icon::before { content: "🌙"; }
+[data-theme="dark"] .theme-icon::before { content: "🌞"; }
+.theme-toggle-wrapper:hover .theme-icon { transform: rotate(20deg) scale(1.1); }
+
+.theme-label { font-size: 0.9rem; font-weight: 400; opacity: 0.85; transition: opacity 0.3s ease; margin-left: 0; white-space: nowrap; line-height: 1.2; }
+[data-theme="light"] .theme-label::before { content: "Dark Mode"; }
+[data-theme="dark"] .theme-label::before { content: "Light Mode"; }
+.theme-toggle-wrapper:hover .theme-label { opacity: 1; }
+
+@keyframes themePulse { 0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); } }
 [data-theme="light"] .navbar-themed .navbar-brand, [data-theme="light"] .navbar-themed .navbar-nav .nav-link.active { color: #343a40; }
 [data-theme="dark"] .navbar-themed .navbar-brand, [data-theme="dark"] .navbar-themed .navbar-nav .nav-link.active { color: rgba(255, 255, 255, 0.9); }
 [data-theme="light"] .navbar-themed .navbar-nav .nav-link { color: rgba(52, 58, 64, 0.5); }

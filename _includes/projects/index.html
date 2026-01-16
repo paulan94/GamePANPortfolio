@@ -1,5 +1,5 @@
 
-<div class="card-columns m-3 mt-5">
+<div class="row m-3 mt-5">
 
   <!-- Remote Projects -->
   {% for remote_project in page.remote_projects %}
@@ -35,7 +35,8 @@
   {% endfor %}
 
   <!-- Local Projects -->
-  {% for project in site.projects %}
+  {% assign sorted_projects = site.projects | sort: 'order' %}
+  {% for project in sorted_projects %}
 
     {%- assign project_type  = "local" -%}
     {%- assign project_id    = project.name | slugify -%}
@@ -52,7 +53,9 @@
       {%- assign external    = false -%}
     {%- endif -%}
 
-    {% include projects/project-card.html %}
+    <div class="col-lg-4 col-md-6 mb-4">
+      {% include projects/project-card.html %}
+    </div>
 
   {% endfor %}
 

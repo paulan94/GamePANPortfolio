@@ -1,16 +1,29 @@
-<div class="row justify-content-center align-items-center p-4">
-  <div class="col-lg-4 col-md-6 text-center mt-4">
-
-    <!-- Fine Circle Responsive Image -->
-    <div id="container" class="my-2">
-      <div id="dummy"></div>
-      <div id="element">
-        <img src="{{ site.author.image }}" alt="{{ site.title }}" class="circle-image wow animated zoomIn" data-wow-delay=".1s">
+<div class="hero-section">
+  <div class="row align-items-center min-vh-75 py-5">
+    <div class="col-lg-5 col-md-6 text-center mb-4 mb-lg-0">
+      <!-- Fine Circle Responsive Image -->
+      <div id="container" class="my-4">
+        <div id="dummy"></div>
+        <div id="element">
+          <img src="{{ site.author.image }}" alt="{{ site.title }}" class="circle-image wow animated zoomIn" data-wow-delay=".1s">
+        </div>
       </div>
     </div>
-
-    <p class="text-muted wow animated slideInDown" data-wow-delay=".15s">{{ site.description }}</p>
-<a class="wow animated slideInUp" href="https://drive.google.com/file/d/1i8DIf_ztNg0UT0BkYEpiknNMkXFZMLkf/view?usp=sharing" target="_blank"><h5><b>Resume Download</b></h5></a>
-
+    <div class="col-lg-7 col-md-6">
+      <h1 class="display-4 font-weight-bold mb-3 wow animated fadeIn" data-wow-delay=".2s">{{ site.author.name }}</h1>
+      <h2 class="h4 text-muted mb-4 wow animated fadeIn" data-wow-delay=".3s">{{ site.description }}</h2>
+      <p class="lead mb-4 wow animated fadeIn" data-wow-delay=".4s">
+        Senior Gameplay Designer crafting combat systems and character kits for AAA mobile games. 
+        Specializing in Unity implementation, FTUE design, and cross-discipline collaboration.
+      </p>
+      <div class="d-flex flex-wrap wow animated fadeIn" data-wow-delay=".5s">
+        <a class="btn btn-primary btn-lg mr-3 mb-2" href="https://drive.google.com/file/d/1i8DIf_ztNg0UT0BkYEpiknNMkXFZMLkf/view?usp=sharing" target="_blank">
+          <i class="fas fa-download mr-2"></i>Download Resume
+        </a>
+        <a class="btn btn-outline-primary btn-lg mb-2" href="/projects/">
+          <i class="fas fa-briefcase mr-2"></i>View Projects
+        </a>
+      </div>
+    </div>
   </div>
 </div>

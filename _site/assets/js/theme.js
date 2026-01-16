@@ -22,6 +22,8 @@ function initTheme() {
     // Default theme
     setTheme(themes.LIGHT);
   }
+  
+  updateThemeToggle();
 
   // Watch for system theme changes
   window.matchMedia(QUERY_KEY).addEventListener("change", (e) => {
@@ -43,4 +45,14 @@ function getTheme() {
 
 function setTheme(value) {
   document.documentElement.setAttribute(THEME_ATTR, value);
+  updateThemeToggle();
+}
+
+function updateThemeToggle() {
+  // This will automatically update via CSS, but we can add any additional logic here if needed
+  const theme = getTheme();
+  const toggler = document.getElementById('theme-toggler');
+  if (toggler) {
+    toggler.setAttribute('title', theme === themes.DARK ? 'Switch to Light Mode' : 'Switch to Dark Mode');
+  }
 }

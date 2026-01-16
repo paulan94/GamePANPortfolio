@@ -8,8 +8,86 @@
   }
 }
 
-#theme-toggler:before {
-  @include themed(content, "🌙", "🌞");
+.theme-toggle-wrapper {
+  position: relative;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  min-height: auto;
+  height: 100%;
+  
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  
+  [data-theme="dark"] &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.theme-icon {
+  font-size: 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  animation: themePulse 2s ease-in-out infinite;
+  transition: transform 0.3s ease;
+  line-height: 1;
+  margin-right: 0.5rem;
+  
+  [data-theme="light"] &::before {
+    content: "🌙";
+  }
+  
+  [data-theme="dark"] &::before {
+    content: "🌞";
+  }
+  
+  .theme-toggle-wrapper:hover & {
+    transform: rotate(20deg) scale(1.1);
+  }
+}
+
+.theme-label {
+  font-size: 0.9rem;
+  font-weight: 400;
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+  margin-left: 0;
+  white-space: nowrap;
+  line-height: 1.2;
+  
+  [data-theme="light"] &::before {
+    content: "Dark Mode";
+  }
+  
+  [data-theme="dark"] &::before {
+    content: "Light Mode";
+  }
+  
+  .theme-toggle-wrapper:hover & {
+    opacity: 1;
+  }
+}
+
+@keyframes themePulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
 }
 
 .navbar-themed {

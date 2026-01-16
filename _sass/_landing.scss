@@ -1,10 +1,23 @@
 // Fine Circle Responsive Image
 // Inspired by https://stackoverflow.com/a/6615994/10194811
 
+.hero-section {
+  padding: 3rem 0;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+.min-vh-75 {
+  min-height: 75vh;
+}
+
 #container {
   display: inline-block;
   position: relative;
   width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 #dummy {
@@ -25,4 +38,18 @@
   border-radius: 50%;
   object-fit: cover;
   object-position: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  border: 4px solid rgba(255, 255, 255, 0.2);
+}
+
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 2rem 0;
+    min-height: auto;
+  }
+  
+  .min-vh-75 {
+    min-height: auto;
+  }
 }
