@@ -1,19 +1,19 @@
 [
   
     {
+      "title"    : "Unannounced AAA Mobile Project (Drop Fake)",
+      "category" : "",
+      "tags"     : "Dropfake, Portfolio",
+      "url"      : "/blog/dropfake-portfolio",
+      "date"     : "2026-01-15 00:00:00 -0800"
+    } ,
+  
+    {
       "title"    : "Fun Times at GDC",
       "category" : "",
       "tags"     : "Blog, GDC",
       "url"      : "/blog/employed-gdc-goer",
       "date"     : "2024-03-24 00:00:00 -0700"
-    } ,
-  
-    {
-      "title"    : "Unannounced AAA Mobile Project (Drop Fake)",
-      "category" : "",
-      "tags"     : "Dropfake, Portfolio",
-      "url"      : "/blog/dropfake-portfolio",
-      "date"     : "2024-01-01 00:00:00 -0800"
     } ,
   
     {

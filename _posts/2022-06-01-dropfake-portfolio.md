@@ -3,12 +3,12 @@ title: Unannounced AAA Mobile Project (Drop Fake)
 tags: [Dropfake, Portfolio]
 style: fill
 color: info
-description: Senior Combat Designer at Drop Fake
-date: 2024-01-01
+description: Senior Gameplay Designer at Drop Fake
+date: 2026-01-15
 ---
 ## Hero / Intro
 
-I'm a Senior Combat Designer at Drop Fake working on an unannounced AAA mobile action/fighting project built in Unity. I take features and character kits from paper design → implementation → iteration, partnering closely with engineering, animation, VFX, and production to deliver clear, responsive gameplay.
+I'm a Senior Gameplay Designer at Drop Fake working on an unannounced AAA mobile action/fighting project built in Unity. I take features and character kits from paper design → implementation → iteration, partnering closely with engineering, animation, VFX, and production to deliver clear, responsive gameplay.
 
 ## Project Snapshot
 
