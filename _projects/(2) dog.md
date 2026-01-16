@@ -2,7 +2,7 @@
 name: dog (Bao Edition)
 tools: [Unity, C#]
 image: https://img.itch.zone/aW1hZ2UvMTAxODMwNy81ODAxNjE1LnBuZw==/original/RWOYJQ.png
-description: <p>Role - Solo Development <p>dog(Bao Edition) is a game dedicated to my small pomeranian, and his unique experiences during our time in a Southern California apartment.
+description: <p>Role - Solo Development <p> A narrative-driven game featuring multiple minigames, dedicated to my pomeranian Bao. Players explore a Southern California apartment and complete missions while the owners are away. Created in 1 month as a passion project.
 external_url: https://paulan94.github.io/GamePANPortfolio/blog/dog-portfolio
 ---
 

@@ -1,7 +1,7 @@
 ---
-name: DropFake
-tools: [Unity, Design, AAA]
+name: Drop Fake — Combat Designer (Unannounced AAA Mobile Project)
+tools: [Unity, Design, AAA, Mobile]
 image: https://framerusercontent.com/assets/R2FNnrJMv4ceelipIQNWCL1jw.png
-description: <p>Role - Game Designer<p> I'm a game designer at Drop Fake working on an unannounced game with an all star team of devs!
+description: <p>Role - Combat Designer<p> Owned combat feature design and implementation in Unity—shipping character kits from paper design to playable prototypes, collaborating with engineering/animation/VFX, and iterating for clarity, balance, and feel. Contributed heavily to FTUE/tutorial flows and cross-discipline production coordination.
 external_url: https://paulan94.github.io/GamePANPortfolio/blog/dropfake-portfolio
 ---

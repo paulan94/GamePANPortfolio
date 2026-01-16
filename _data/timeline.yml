@@ -1,8 +1,7 @@
-- title: Game Designer - Drop Fake
+- title: Combat Designer - Drop Fake
   from: 2024
   to: present
-  description: Crafting combat systems for an unannounced AAA game based on one of the biggest gaming IPs in the industry.
-               Owning initial paper designs and implementing characters within Unity using a custom scripting engine.
+  description: Combat designer on an unannounced AAA mobile project in Unity. I own character kit design and implementation from paper specs through playable prototypes and tuning, partnering with engineering, animation, and VFX to deliver responsive, readable combat. I've also contributed heavily to FTUE design—structuring tutorial flows that teach mechanics clearly and support early retention—plus cross-discipline coordination to keep iteration moving.
 
 
 - title: Game Designer - NetherRealm Studios
@@ -19,14 +18,14 @@
   description: Managed a team of 3 engineers to create 2 prototype games and a fully released game in Unity.
                Learned and implemented skills such as sound design, lighting, art direction, animation rigging, etc.
                Built a turn based action-RPG game and a multiplayer PvP game from the ground up.
-               Currently designing and prototyping a turn-based mobile RPG game to release in Q3-2023.
+               Designed and prototyped a turn-based mobile RPG game.
 
 
 - title: Software Engineer - Meta/Facebook
   from: 2021
   to: 2022
-  description: Working as a (PHP) backend engineer interfacing with Oculus Quest 2 payments processing portal. 
-               Participating in oncall rotations to maintain, debug and address failures in any part of the shop fulfillment process.
+  description: Worked as a (PHP) backend engineer interfacing with Oculus Quest 2 payments processing portal. 
+               Participated in oncall rotations to maintain, debug and address failures in any part of the shop fulfillment process.
 
 - title: Gameplay Programmer (UE4) - Turn Me Up Games
   from: 2021
