@@ -11,9 +11,11 @@
 {% include head.html %}
 
 <body class="h-100 d-flex flex-column">
-
-  <main class="flex-shrink-0 container mt-5">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="container mt-5">
     {% include navbar.html %}
+  </header>
+  <main id="main-content" tabindex="-1" class="flex-shrink-0 container mt-4">
     {{ content }}
   </main>
   {% include footer.html %}

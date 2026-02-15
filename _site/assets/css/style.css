@@ -92,6 +92,12 @@ html { padding-left: calc(100vw - 100%); }
 
 body { font-family: "Poppins", sans-serif; line-height: 1.6; }
 
+.skip-link { position: absolute; left: -9999px; top: 0; z-index: 2000; padding: 0.75rem 1rem; background: #007bff; color: rgba(255, 255, 255, 0.9); border-radius: 0.25rem; }
+
+.skip-link:focus { left: 1rem; top: 1rem; }
+
+a:focus-visible, button:focus-visible, [role="button"]:focus-visible { outline: 3px solid #007bff; outline-offset: 3px; }
+
 h1, h2, h3, h4, h5, h6 { font-weight: 600; line-height: 1.2; }
 
 .projects-header { padding-top: 2rem; }
@@ -168,6 +174,8 @@ h1, h2, h3, h4, h5, h6 { font-weight: 600; line-height: 1.2; }
 .project.card .card-body { display: flex; flex-direction: column; padding: 1.25rem; }
 .project.card .card-title { font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem; }
 .project.card .card-text { font-size: 0.9rem; line-height: 1.5; color: inherit; }
+.project.card .card-text p { margin-bottom: 0.75rem; }
+.project.card .card-text p:last-child { margin-bottom: 0; }
 .project.card:hover:not(.post) { transform: translateY(-8px); box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); }
 .project.card:hover:not(.post) .card-img-top { transform: scale(1.05); }
 
@@ -370,7 +378,7 @@ h1, h2, h3, h4, h5, h6 { font-weight: 600; line-height: 1.2; }
 .highlight .cpf, [data-theme="dark"] pre .cpf, [data-theme="dark"] code.highlighter-rouge .cpf { color: #aaaaaa; font-style: italic; }
 
 /* Comment.PreprocFile */
-.theme-toggle-wrapper { position: relative; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; padding: 0.5rem 1rem; margin: 0; border-radius: 6px; transition: all 0.2s ease; min-height: auto; height: 100%; }
+.theme-toggle-wrapper { position: relative; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; padding: 0.5rem 1rem; margin: 0; border: 0; background: transparent; color: inherit; border-radius: 6px; transition: all 0.2s ease; min-height: auto; height: 100%; }
 .theme-toggle-wrapper:hover { background-color: rgba(0, 0, 0, 0.05); }
 [data-theme="dark"] .theme-toggle-wrapper:hover { background-color: rgba(255, 255, 255, 0.1); }
 .theme-toggle-wrapper:active { transform: scale(0.95); }
@@ -400,6 +408,7 @@ h1, h2, h3, h4, h5, h6 { font-weight: 600; line-height: 1.2; }
 
 [data-theme="dark"] { /* Comment */ /* Error */ /* Escape */ /* Generic */ /* Keyword */ /* Literal */ /* Name */ /* Operator */ /* Other */ /* Punctuation */ /* Comment.Hashbang */ /* Comment.Multiline */ /* Comment.Preproc */ /* Comment.PreprocFile */ /* Comment.Single */ /* Comment.Special */ /* Generic.Deleted */ /* Generic.Emph */ /* Generic.Error */ /* Generic.Heading */ /* Generic.Inserted */ /* Generic.Output */ /* Generic.Prompt */ /* Generic.Strong */ /* Generic.Subheading */ /* Generic.Traceback */ /* Keyword.Constant */ /* Keyword.Declaration */ /* Keyword.Namespace */ /* Keyword.Pseudo */ /* Keyword.Reserved */ /* Keyword.Type */ /* Literal.Date */ /* Literal.Number */ /* Literal.String */ /* Name.Attribute */ /* Name.Builtin */ /* Name.Class */ /* Name.Constant */ /* Name.Decorator */ /* Name.Entity */ /* Name.Exception */ /* Name.Function */ /* Name.Label */ /* Name.Namespace */ /* Name.Other */ /* Name.Property */ /* Name.Tag */ /* Name.Variable */ /* Operator.Word */ /* Text.Whitespace */ /* Literal.Number.Bin */ /* Literal.Number.Float */ /* Literal.Number.Hex */ /* Literal.Number.Integer */ /* Literal.Number.Oct */ /* Literal.String.Affix */ /* Literal.String.Backtick */ /* Literal.String.Char */ /* Literal.String.Delimiter */ /* Literal.String.Doc */ /* Literal.String.Double */ /* Literal.String.Escape */ /* Literal.String.Heredoc */ /* Literal.String.Interpol */ /* Literal.String.Other */ /* Literal.String.Regex */ /* Literal.String.Single */ /* Literal.String.Symbol */ /* Name.Builtin.Pseudo */ /* Name.Function.Magic */ /* Name.Variable.Class */ /* Name.Variable.Global */ /* Name.Variable.Instance */ /* Name.Variable.Magic */ /* Literal.Number.Integer.Long */ }
 [data-theme="dark"] body { background-color: #17191a; color: rgba(255, 255, 255, 0.9); }
+[data-theme="dark"] .text-muted { color: #c2c8ce !important; }
 [data-theme="dark"] .highlight .hll, [data-theme="dark"] pre .hll, [data-theme="dark"] code.highlighter-rouge .hll { background-color: #404040; }
 [data-theme="dark"] .highlight, [data-theme="dark"] pre, [data-theme="dark"] code.highlighter-rouge { background: #202020; color: #d0d0d0; }
 [data-theme="dark"] .highlight .c, [data-theme="dark"] pre .c, [data-theme="dark"] code.highlighter-rouge .c { color: #999999; font-style: italic; }

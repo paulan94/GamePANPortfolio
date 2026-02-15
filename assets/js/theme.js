@@ -49,10 +49,13 @@ function setTheme(value) {
 }
 
 function updateThemeToggle() {
-  // This will automatically update via CSS, but we can add any additional logic here if needed
   const theme = getTheme();
-  const toggler = document.getElementById('theme-toggler');
+  const toggler = document.getElementById("theme-toggler");
   if (toggler) {
-    toggler.setAttribute('title', theme === themes.DARK ? 'Switch to Light Mode' : 'Switch to Dark Mode');
+    const isDark = theme === themes.DARK;
+    const toggleLabel = isDark ? "Switch to Light Mode" : "Switch to Dark Mode";
+    toggler.setAttribute("title", toggleLabel);
+    toggler.setAttribute("aria-label", toggleLabel);
+    toggler.setAttribute("aria-pressed", String(isDark));
   }
 }

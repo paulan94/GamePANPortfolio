@@ -22,11 +22,11 @@
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="dog (Bao Edition)">
-  <meta property="og:description" content="Role - Solo Development  A narrative-driven game featuring multiple minigames, dedicated to my pomeranian Bao. Players explore a Southern California apartmen...">
+  <meta property="og:description" content="Role - Solo DevelopmentA narrative-driven game featuring multiple minigames, dedicated to my pomeranian Bao. Players explore a Southern California apartment ...">
   <meta property="og:image" content="https://img.itch.zone/aW1hZ2UvMTAxODMwNy81ODAxNjE1LnBuZw==/original/RWOYJQ.png">
 
   <title>dog (Bao Edition)</title>
-  <meta name="description" content="Role - Solo Development  A narrative-driven game featuring multiple minigames, dedicated to my pomeranian Bao. Players explore a Southern California apartmen...">
+  <meta name="description" content="Role - Solo DevelopmentA narrative-driven game featuring multiple minigames, dedicated to my pomeranian Bao. Players explore a Southern California apartment ...">
 
   <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
 
@@ -48,9 +48,9 @@
 </head>
 
 <body class="h-100 d-flex flex-column">
-
-  <main class="flex-shrink-0 container mt-5">
-    <nav class="navbar navbar-expand-lg navbar-themed">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed" aria-label="Primary">
 
   <a class="navbar-brand" href="/">
     <h5 class="mb-0"><b>Paul An</b></h5>
@@ -64,20 +64,23 @@
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/privacy/"></a>
 
-      <a class="nav-item nav-link active" href="/projects/">Projects</a>
+      <a class="nav-item nav-link active" href="/projects/"aria-current="page">Projects</a>
 
       <a class="nav-item nav-link " href="/about/">About</a>
 
       
 
-      <span id="theme-toggler" class="nav-item nav-link theme-toggle-wrapper" role="button" onclick="toggleTheme()" title="Toggle dark/light mode">
+      <button id="theme-toggler" class="nav-item nav-link theme-toggle-wrapper" type="button" onclick="toggleTheme()" title="Toggle dark/light mode" aria-label="Toggle dark/light mode" aria-pressed="false">
         <span class="theme-icon"></span>
         <span class="theme-label d-none d-md-inline ml-2"></span>
-      </span>
+      </button>
     </div>
   </div>
 
 </nav>
+
+  </header>
+  <main id="main-content" tabindex="-1" class="flex-shrink-0 container mt-4">
     <div class="col-lg-10 mx-auto mt-5 markdown-body">
   
 
@@ -90,24 +93,28 @@
     by <strong>Paul An</strong>
   </small>
 
-  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="mailto:paulan94@gmail.com"
+  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="mailto:paulan94@gmail.com"aria-label="Email"
+       title="Email"
        style="color: #6c757d"
        onMouseOver="this.style.color='#db4437'"
        onMouseOut="this.style.color='#6c757d'">
       <i class="fas fa-envelope fa-1x"></i>
-    </a><a class="social mx-1"  href="https://www.github.com/paulan94"
+    </a><a class="social mx-1"  href="https://www.github.com/paulan94"target="_blank" rel="noopener noreferrer"aria-label="Github"
+       title="Github"
        style="color: #6c757d"
        onMouseOver="this.style.color='#333333'"
        onMouseOut="this.style.color='#6c757d'">
       <i class="fab fa-github fa-1x"></i>
-    </a><a class="social mx-1"  href="https://www.linkedin.com/in/cspaulan"
+    </a><a class="social mx-1"  href="https://www.linkedin.com/in/cspaulan"target="_blank" rel="noopener noreferrer"aria-label="Linkedin"
+       title="Linkedin"
        style="color: #6c757d"
        onMouseOver="this.style.color='#007bb5'"
        onMouseOut="this.style.color='#6c757d'">
       <i class="fab fa-linkedin-in fa-1x"></i>
     </a>
 
-</div><small id="attribution">
+</div>
+<small id="attribution">
     theme <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a>
   </small>
 

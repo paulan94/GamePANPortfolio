@@ -9,6 +9,10 @@ $dark-900: #17191a;
     color: $text-white;
   }
 
+  .text-muted {
+    color: #c2c8ce !important;
+  }
+
   // Code blocks & Syntax highlighting
 
   @import "native.scss";

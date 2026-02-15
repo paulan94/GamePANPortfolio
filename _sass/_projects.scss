@@ -39,6 +39,14 @@
     font-size: 0.9rem;
     line-height: 1.5;
     color: inherit;
+    
+    p {
+      margin-bottom: 0.75rem;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
   }
 
   transition: transform 400ms, box-shadow 400ms;

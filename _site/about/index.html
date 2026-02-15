@@ -48,9 +48,9 @@
 </head>
 
 <body class="h-100 d-flex flex-column">
-
-  <main class="flex-shrink-0 container mt-5">
-    <nav class="navbar navbar-expand-lg navbar-themed">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed" aria-label="Primary">
 
   <a class="navbar-brand" href="/">
     <h5 class="mb-0"><b>Paul An</b></h5>
@@ -67,18 +67,21 @@
 
       <a class="nav-item nav-link " href="/projects/">Projects</a>
 
-      <a class="nav-item nav-link active" href="/about/">About</a>
+      <a class="nav-item nav-link active" href="/about/" aria-current="page">About</a>
 
       
 
-      <span id="theme-toggler" class="nav-item nav-link theme-toggle-wrapper" role="button" onclick="toggleTheme()" title="Toggle dark/light mode">
+      <button id="theme-toggler" class="nav-item nav-link theme-toggle-wrapper" type="button" onclick="toggleTheme()" title="Toggle dark/light mode" aria-label="Toggle dark/light mode" aria-pressed="false">
         <span class="theme-icon"></span>
         <span class="theme-label d-none d-md-inline ml-2"></span>
-      </span>
+      </button>
     </div>
   </div>
 
 </nav>
+
+  </header>
+  <main id="main-content" tabindex="-1" class="flex-shrink-0 container mt-4">
     <div class="col-lg-10 mx-auto mt-5 markdown-body">
   <h1 id="about-me"><strong>About Me</strong></h1>
 
@@ -161,11 +164,11 @@ I’m a Senior Gameplay Designer at Drop Fake, working on an unannounced AAA mob
   </small>
 
   <div class="container-fluid justify-content-center">
-<a class="social mx-1" href="mailto:paulan94@gmail.com" style="color: #6c757d" onmouseover="this.style.color='#db4437'" onmouseout="this.style.color='#6c757d'">
+<a class="social mx-1" href="mailto:paulan94@gmail.com" aria-label="Email" title="Email" style="color: #6c757d" onmouseover="this.style.color='#db4437'" onmouseout="this.style.color='#6c757d'">
       <i class="fas fa-envelope fa-1x"></i>
-    </a><a class="social mx-1" href="https://www.github.com/paulan94" style="color: #6c757d" onmouseover="this.style.color='#333333'" onmouseout="this.style.color='#6c757d'">
+    </a><a class="social mx-1" href="https://www.github.com/paulan94" target="_blank" rel="noopener noreferrer" aria-label="Github" title="Github" style="color: #6c757d" onmouseover="this.style.color='#333333'" onmouseout="this.style.color='#6c757d'">
       <i class="fab fa-github fa-1x"></i>
-    </a><a class="social mx-1" href="https://www.linkedin.com/in/cspaulan" style="color: #6c757d" onmouseover="this.style.color='#007bb5'" onmouseout="this.style.color='#6c757d'">
+    </a><a class="social mx-1" href="https://www.linkedin.com/in/cspaulan" target="_blank" rel="noopener noreferrer" aria-label="Linkedin" title="Linkedin" style="color: #6c757d" onmouseover="this.style.color='#007bb5'" onmouseout="this.style.color='#6c757d'">
       <i class="fab fa-linkedin-in fa-1x"></i>
     </a>
 

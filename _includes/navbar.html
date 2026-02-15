@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-themed">
+<nav class="navbar navbar-expand-lg navbar-themed" aria-label="Primary">
 
   <a class="navbar-brand" href="{{ site.baseurl }}/">
     <h5 class="mb-0"><b>{{ site.author.name }}</b></h5>
@@ -54,14 +54,14 @@
           {%- assign url = html_page.url | relative_url -%}
         {%- endif -%}
 
-        <a class="nav-item nav-link {{ active_status }}" href="{{ url }}" {%- if html_page.external_url and site.open_new_tab -%} target="_blank" {%- endif -%}>{{ html_page.title }}</a>
+        <a class="nav-item nav-link {{ active_status }}" href="{{ url }}" {%- if html_page.external_url and site.open_new_tab -%} target="_blank" rel="noopener noreferrer" {%- endif -%} {%- if active_status == "active" -%} aria-current="page" {%- endif -%}>{{ html_page.title }}</a>
 
       {% endfor %}
 
-      <span id="theme-toggler" class="nav-item nav-link theme-toggle-wrapper" role="button" onclick="toggleTheme()" title="Toggle dark/light mode">
+      <button id="theme-toggler" class="nav-item nav-link theme-toggle-wrapper" type="button" onclick="toggleTheme()" title="Toggle dark/light mode" aria-label="Toggle dark/light mode" aria-pressed="false">
         <span class="theme-icon"></span>
         <span class="theme-label d-none d-md-inline ml-2"></span>
-      </span>
+      </button>
     </div>
   </div>
 
