@@ -6,67 +6,52 @@ color: info
 description: Senior Gameplay Designer at Drop Fake
 date: 2026-01-15
 ---
-## Hero / Intro
 
-I'm a Senior Gameplay Designer at Drop Fake working on an unannounced AAA mobile action/fighting project built in Unity. I take features and character kits from paper design → implementation → iteration, partnering closely with engineering, animation, VFX, and production to deliver clear, responsive gameplay.
+## Drop Fake — Senior Gameplay Designer (Unannounced AAA Mobile Project)
 
-## Project Snapshot
+- **Role:** **Senior Gameplay Designer**
+- Unity · Mobile · Action/Fighting · Combat kits · FTUE · Data-driven · NDA
 
-- **Platform:** Mobile
-- **Engine:** Unity
-- **Focus Areas:** Combat kits, moment-to-moment feel, encounter readability, and onboarding/FTUE flows
-- **Status:** Unannounced (details limited due to NDA)
+I design and implement combat kits and the systems that support them in Unity. I own features from early concept through playable prototypes, tuning, and handoff, partnering closely with engineers, animators, VFX, and production.
 
-## What I Owned
+### Responsibilities
 
-- Designed and implemented character combat kits from initial concept through playable prototypes and tuning passes.
-- Built and iterated on combat systems/content hooks that support repeatable kit creation and fast balancing.
-- Collaborated cross-discipline to align animation timing, VFX readability, audio beats, and gameplay rules.
-- Contributed heavily to FTUE / tutorial design, structuring learn-by-doing steps and progression of mechanics.
-- Supported lightweight production coordination: clarifying requirements, tracking dependencies, and unblocking iteration.
+- Design combat kits and moment-to-moment interactions (identity, counterplay, clarity).
+- Author data-driven content hooks and parameters for fast iteration and tuning.
+- Rapid prototype in-engine to validate feel, readability, and timing.
+- Structure FTUE and tutorial flow to teach mechanics through play.
+- Coordinate cross-discipline implementation: animation timing, VFX clarity, and code hooks.
 
-## How I Work
+### Process & examples
 
-1. **Define the player goal** and the "why" behind the mechanic (clarity, counterplay, skill expression).
-2. **Prototype quickly in-engine** to validate feel and readability early.
-3. **Instrument iteration** with targeted feedback loops (team playtests, edge cases, balance checks).
-4. **Polish for clarity:** remove ambiguity, ensure strong feedback, create consistent rules.
-5. **Document and handoff:** maintain design docs and implementation notes so features scale.
+1. Concept: define player goals and mechanical intent for a kit or feature.
+2. Prototype: build a minimal in-engine implementation to test feel and readability.
+3. Playtest & instrument: gather targeted feedback, playtest notes, and telemetry when available.
+4. Tune: iterate parameters, animation windows, and feedback to reach clarity and balance.
+5. Handoff: deliver concise design docs, tunable data, and implementation notes for engineers and content teams.
 
-## Collaboration
+Examples: I built kit patterns (combo/cancel windows, defensive counters, simple resource rules) to make new characters faster to implement and safer to tune. I also redesigned the first-run FTUE sequence to introduce mechanics progressively and reduce early player friction.
 
-I work day-to-day with:
+### Selected contributions
 
-- **Engineers** to shape implementable systems and author content hooks
-- **Animators** to align timing, cancels, hit reactions, and readability
-- **VFX/SFX** to reinforce gameplay states and impact
-- **Production** to plan deliverables and keep iteration moving
+- Implemented and tuned multiple combat kits; delivered repeated playtest-ready builds for internal validation.
+- Built data-driven patterns and content hooks that shortened implementation time for new kits.
+- Reworked onboarding and tutorial sequencing to improve early-session clarity.
+- Produced concise design docs and implementation notes to speed handoff and reduce iteration friction.
 
-## Selected Outcomes
+### Outcomes & learnings
 
-- Delivered multiple combat features and kit implementations through repeated iteration cycles.
-- Improved onboarding clarity by restructuring tutorial steps and reducing early friction points.
-- Helped standardize kit implementation patterns to make future content faster to build and safer to tune.
+- Made kit implementation faster and more reliable through standardized patterns and clear handoff artifacts.
+- Improved first-session clarity by restructuring FTUE, which reduced common early confusion in playtests (I can share specific metrics privately).
 
-## Skills Demonstrated
+**Tools & workflow**
 
-- Combat kit design (identity, counterplay, clarity)
-- Rapid prototyping and tuning in Unity
-- Data-driven iteration
-- FTUE/onboarding design
-- Cross-discipline collaboration and delivery
+- Unity, spreadsheets/config-driven tuning, playtests, and short design docs for handoff.
 
-## Tools
+**Note**
 
-- Unity (including common sequencing/implementation workflows)
-- Data-driven design patterns (content definitions, tunable parameters)
-- Cross-discipline iteration workflows (docs, playtests, implementation notes)
-
-## Note
-
-Because the project is unannounced, I can't share footage or detailed mechanics publicly, but I'm happy to discuss my process, collaboration style, and the design tradeoffs I navigated.
+This project is unannounced, so I can't share footage or in-depth mechanics publicly; I'm happy to discuss process, tradeoffs, and specific contributions in private.
 
 ## Links
 
 [Official Studio Site](https://www.dropfake.com/)
-

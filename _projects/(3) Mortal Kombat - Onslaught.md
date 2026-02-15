@@ -2,7 +2,7 @@
 name: Mortal Kombat - Onslaught
 tools: [Unreal, Design, AAA]
 image: https://assetsio.reedpopcdn.com/mortal-kombat-onslaught-cyrax.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp
-description: "<p>Role - Associate Game Designer</p><p>Designed and implemented characters and character abilities using UE5 Blueprints for Mortal Kombat: Onslaught. Worked with engineers, animators, artists, and producers to create a AAA mobile experience.</p>"
+description: "<p><strong>Role:</strong> Associate Game Designer</p><p>Designed and implemented characters and character abilities using UE5 Blueprints for Mortal Kombat: Onslaught. Worked with engineers, animators, artists, and producers to create a AAA mobile experience.</p>"
 external_url: https://paulan94.github.io/GamePANPortfolio/blog/mko-portfolio
 order: 2
 ---
