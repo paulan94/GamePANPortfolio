@@ -1,18 +1,19 @@
 ---
-title: Mortal Kombat Onslaught
-tags: [Mortal Kombat, Portfolio]
+title: Netherrealm Studios
+tags: [Mortal Kombat, Netherrealm, Fighting Game]
 style: fill
 color: info
 description: My contributions to Mortal Kombat Onslaught
 ---
 
-## The Game
+## The Game : Mortal Kombat: Onslaught (#1 on Google Play Store)
 
-Mortal Kombat: Onslaught is a game that has been in the makings for 4+ years! MK:O debuted on the Google Play store as #1 in the Free to Play category. It's a mobile gacha RPG where you collect your favorite heroes and create your own teams to participate in high octane PvE and PvP game modes. The game was shut down in October 2024.
+Mortal Kombat: Onslaught is a game that has been in the makings for 4+ years! MK:O debuted on the Google Play store as #1 in the mobile Free to Play category. It's a gacha RPG where you collect your favorite heroes and create your own teams to participate in high octane PvE and PvP game modes. The game was unfortunately later shut down in October 2024.
 
-## My Role
+## My Role - Associate Game Designer
 
-I was an associate game designer working on the combat team! I spent most of my time (~70%) implementing character abilities in UE5 Blueprints. I spent the first few months working closely with veteran Designer Mick Pack- who showed me the ropes and gave me an amazing onboarding experience. (Thanks Mick for interviewing me and taking the time to properly onboard me!) My other work involved collaborating with other team members, playtests, creating internal and player facing documentation, and more. I also may have accidentally leaked some unreleased characters in my time there. Whoops.
+This was my first foray into the world of AAA gaming and it was an exceptional professional experience for me and I will forever cherish my memories from that time.
+I was a game designer working on the combat team. I spent most of my time (~70%) implementing character kits and abilities in Unreal Engine 5 using their Blueprint system. I spent the first few months working closely with veteran Designer Mick Pack- who showed me the ropes and gave me an amazing onboarding experience. (Thank you Mick for interviewing me and taking the time to patiently onboard me!) My other work involved collaborating with other team members, playtests, creating internal and player facing documentation, and more.
 
 Some of my favorite characters that I helped design and implement include:
 
@@ -21,6 +22,12 @@ Some of my favorite characters that I helped design and implement include:
 - Cyber Smoke
 - Klassic Kabal
 - Peacemaker (Can't see me!)
+
+I also may have accidentally leaked some unreleased characters in my time there. Whoops.
+
+## A Retrospective
+
+I have to preface by saying that
 
 ## Screenshots
 
