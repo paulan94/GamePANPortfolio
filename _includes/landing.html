@@ -1,29 +1,66 @@
-<div class="hero-section">
-  <div class="row align-items-center min-vh-75 py-5">
-    <div class="col-lg-5 col-md-6 text-center mb-4 mb-lg-0">
-      <!-- Fine Circle Responsive Image -->
-      <div id="container" class="my-4">
-        <div id="dummy"></div>
-        <div id="element">
-          <img src="{{ site.author.image }}" alt="{{ site.author.name }} portrait" class="circle-image wow animated zoomIn" data-wow-delay=".1s">
-        </div>
+<div class="wrap hero">
+  <div class="kicker mono">Senior Game Designer <span class="sub">· Combat &amp; systems</span></div>
+  <h1 class="display">I design game systems with a specialty in <em>combat</em>.</h1>
+  <p class="lede">
+    I own features end to end, from the first paper spec to the build that ships.
+    That means writing the design, putting it in Unity, tuning the numbers, and getting
+    it to feel right in the player&rsquo;s hands. I came up through software and gameplay
+    engineering, so I work in the code under my systems instead of just handing off a spec.
+  </p>
+  <div class="actions">
+    <a class="btn primary" href="{{ '/projects/' | relative_url }}">View selected work <span class="arr" aria-hidden="true">→</span></a>
+    <a class="btn ghost" href="{{ '/blog/' | relative_url }}">Read my writing</a>
+  </div>
+
+  <div class="creds">
+    <div class="creds-grid">
+      <div class="cred">
+        <div class="label mono">Now</div>
+        <div class="val">AAA mobile<small>Fighting game · combat &amp; kits</small></div>
       </div>
-    </div>
-    <div class="col-lg-7 col-md-6">
-      <h1 class="display-4 font-weight-bold mb-3 wow animated fadeIn" data-wow-delay=".2s">{{ site.author.name }}</h1>
-      <h2 class="h4 text-muted mb-4 wow animated fadeIn" data-wow-delay=".3s">{{ site.description }}</h2>
-      <p class="lead mb-4 wow animated fadeIn" data-wow-delay=".4s">
-        Senior Gameplay Designer crafting combat systems and character kits for AAA mobile games. 
-        Specializing in Unity implementation, FTUE design, and cross-discipline collaboration.
-      </p>
-      <div class="d-flex flex-wrap wow animated fadeIn" data-wow-delay=".5s">
-        <a class="btn btn-primary btn-lg mr-3 mb-2" href="https://drive.google.com/file/d/18WpJPNb7b5J_euQh8_YCxk6d3zXE9VBC/view?usp=drive_link" target="_blank" rel="noopener noreferrer" aria-label="Download resume (opens in a new tab)">
-          <i class="fas fa-download mr-2"></i>Download Resume
-        </a>
-        <a class="btn btn-outline-primary btn-lg mb-2" href="{{ '/projects/' | relative_url }}">
-          <i class="fas fa-briefcase mr-2"></i>View Projects
-        </a>
+      <div class="cred">
+        <div class="label mono">Previously</div>
+        <div class="val">NetherRealm<small>Mortal Kombat: Onslaught</small></div>
+      </div>
+      <div class="cred">
+        <div class="label mono">Before design</div>
+        <div class="val">Meta · Boeing<small>Software engineering</small></div>
+      </div>
+      <div class="cred">
+        <div class="label mono">Based in</div>
+        <div class="val">Bay Area<small>San Francisco, CA</small></div>
       </div>
     </div>
   </div>
 </div>
+
+<section class="wrap block" id="work">
+  <div class="sec-head">
+    <h2>Selected work</h2>
+    <a href="{{ '/projects/' | relative_url }}">All projects →</a>
+  </div>
+  <div class="work-grid">
+    {%- assign selected = site.projects | sort: 'order' -%}
+    {%- for project in selected limit:6 -%}
+      {%- if project.case_study -%}
+        {%- assign url = project.case_study | relative_url -%}
+      {%- else -%}
+        {%- assign url = project.url | relative_url -%}
+      {%- endif -%}
+      <a class="work-card" data-cat="{{ project.category }}" href="{{ url }}">
+        <div class="work-card-media">
+          {%- if project.image -%}<img src="{{ project.image }}" alt="{{ project.name }}" loading="lazy">{%- endif -%}
+        </div>
+        <div class="work-card-body">
+          <h3 class="work-card-title">{{ project.name }}</h3>
+          <div class="work-card-meta">
+            {%- if project.role -%}<span class="role-pill">{{ project.role }}</span>{%- endif -%}
+            {%- if project.year -%}<span class="work-card-year">{{ project.year }}</span>{%- endif -%}
+          </div>
+          {%- if project.blurb -%}<p class="work-card-blurb">{{ project.blurb }}</p>{%- endif -%}
+          <div class="tags">{% for t in project.tools %}<span class="tag">{{ t }}</span>{% endfor %}</div>
+        </div>
+      </a>
+    {%- endfor -%}
+  </div>
+</section>

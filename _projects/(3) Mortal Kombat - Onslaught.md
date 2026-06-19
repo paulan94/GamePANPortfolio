@@ -1,9 +1,13 @@
 ---
-name: Mortal Kombat - Onslaught
-tools: [Unreal, Design, AAA]
+name: "Mortal Kombat: Onslaught"
+role: Game Designer · NetherRealm
+year: 2023 to 2024
+category: pro
+blurb: "Built and tuned playable characters in Unreal for a mobile fighter that launched at number one."
+tools: [Unreal, Character abilities, AAA]
 image: https://assetsio.reedpopcdn.com/mortal-kombat-onslaught-cyrax.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp
 description: "<p><strong>Role:</strong> Associate Game Designer</p><p>Designed and implemented characters and character abilities using UE5 Blueprints for Mortal Kombat: Onslaught. Worked with engineers, animators, artists, and producers to create a AAA mobile experience.</p>"
-external_url: https://paulan94.github.io/GamePANPortfolio/blog/mko-portfolio
+case_study: /blog/mko-portfolio
 order: 2
 ---
 
@@ -15,4 +19,4 @@ Mortal Kombat: Onslaught is a mobile gacha RPG that debuted at #1 in the Free to
 
 As an Associate Game Designer on the combat team, I implemented character abilities in UE5 Blueprints, ensuring each character met NetherRealm Studios' AAA quality standards. I worked closely with engineers, animators, and artists to handle edge cases and deliver polished character implementations.
 
-[Read the full case study →]({{ page.external_url }})
+[Read the full case study →]({{ page.case_study | relative_url }})

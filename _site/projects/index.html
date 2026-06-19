@@ -1,12 +1,5 @@
 <!DOCTYPE html>
-
-<!--
-  portfolYOU Jekyll theme by Youssef Raafat
-  Free for personal and commercial use under the MIT license
-  https://github.com/YoussefRaafatNasry/portfolYOU
--->
-
-<html lang="en" class="h-100">
+<html lang="en">
 
 <head>
 
@@ -21,276 +14,160 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Projects">
-  <meta property="og:description" content="Game Designer hailing from Los Angeles, California">
+  <meta property="og:title" content="Work">
+  <meta property="og:description" content="Senior game designer specializing in fighting game combat and character systems.">
   <meta property="og:image" content="https://i.imgur.com/MQki12X.png">
 
-  <title>Projects</title>
-  <meta name="description" content="Game Designer hailing from Los Angeles, California">
+  <title>Work · Paul An</title>
+  <meta name="description" content="Senior game designer specializing in fighting game combat and character systems.">
 
   <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
 
-  <!-- Theme style -->
-  <script src="/assets/js/theme.js"></script>
-
-  <!-- Font Awesome CDN -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
-
-  <!-- Bootstrap CSS CDN -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
-
-  <!-- Animate CSS CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="/assets/css/style.css">
 
 </head>
 
-<body class="h-100 d-flex flex-column">
+
+<body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
-  <header class="container mt-5">
-    <nav class="navbar navbar-expand-lg navbar-themed" aria-label="Primary">
 
-  <a class="navbar-brand" href="/">
-    <h5 class="mb-0"><b>Paul An</b></h5>
-    <small class="text-muted d-none d-md-inline">Senior Gameplay Designer</small>
-  </a>
+  <header class="site-nav">
+  <div class="nav-inner">
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <i class="fas fa-1x fa-bars text-themed"></i>
-  </button>
+    <a class="brand" href="/">
+      Paul An<span>.</span>
+      <small>Senior Game Designer · Combat</small>
+    </a>
 
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/privacy/"></a>
+    <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+      <span></span>
+    </button>
 
-      <a class="nav-item nav-link active" href="/projects/"aria-current="page">Projects</a>
+    <nav class="links" id="nav-links" aria-label="Primary">
+      <a href="/projects/" class="active" aria-current="page">Work</a>
+      <a href="/blog/" >Writing</a>
+      <a href="/about/" >About</a>
+      <a class="cta" href="https://drive.google.com/file/d/18WpJPNb7b5J_euQh8_YCxk6d3zXE9VBC/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Résumé <span aria-hidden="true">↗</span></a>
+    </nav>
 
-      <a class="nav-item nav-link " href="/about/">About</a>
+  </div>
+</header>
 
-      
 
-      <button id="theme-toggler" class="nav-item nav-link theme-toggle-wrapper" type="button" onclick="toggleTheme()" title="Toggle dark/light mode" aria-label="Toggle dark/light mode" aria-pressed="false">
-        <span class="theme-icon"></span>
-        <span class="theme-label d-none d-md-inline ml-2"></span>
-      </button>
-    </div>
+  <main id="main-content" tabindex="-1">
+    <div class="wrap page">
+  <div class="page-head">
+    <div class="kicker mono">Selected projects</div>
+    <h1>Work</h1>
+    <p class="lede">Combat systems, character kits, and full games across AAA mobile and solo projects. Shipped work first, then prototypes and game jams.</p>
   </div>
 
-</nav>
-
-  </header>
-  <main id="main-content" tabindex="-1" class="flex-shrink-0 container mt-4">
-    <div class="projects-header mb-5">
-  <h1 class="display-4 font-weight-bold mb-3">Projects</h1>
-  <p class="lead text-muted">A selection of my work in game design, combat systems, and gameplay implementation across AAA and indie projects.</p>
-</div>
-
-
-<div class="row m-3 mt-5">
-
-  <!-- Remote Projects -->
-  
-
-  <!-- Local Projects -->
-  
-  <div class="col-lg-4 col-md-6 mb-4">
-      <div class="wow animated fadeIn h-100" data-wow-delay=".15s">
-  <a href="https://paulan94.github.io/GamePANPortfolio/blog/dropfake-portfolio" class="project card text-themed h-100 d-flex flex-column"><div class="project-image-wrapper">
-      <img id="drop-fake-img" class="card-img-top" src="https://framerusercontent.com/assets/R2FNnrJMv4ceelipIQNWCL1jw.png" alt="Drop Fake" loading="lazy" />
-    </div><div class="card-body d-flex flex-column flex-grow-1">
-      <h5 id="drop-fake-name" class="card-title mb-2">Drop Fake
-      </h5>
-      <div id="drop-fake-desc" class="card-text flex-grow-1"><p><strong>Role:</strong> Senior Gameplay Designer</p><p>Owned combat feature design and implementation in Unity. Shipped character kits from paper to playable prototypes. Focus areas: combat kits, readability, feel, and FTUE.</p></div>
-      <p id="drop-fake-tools" class="card-text mb-0 mt-auto"><span class="badge badge-pill text-primary border border-primary mr-1 mb-1">Unity</span><span class="badge badge-pill text-primary border border-primary mr-1 mb-1">Design</span><span class="badge badge-pill text-primary border border-primary mr-1 mb-1">AAA</span><span class="badge badge-pill text-primary border border-primary mr-1 mb-1">Mobile</span></p>
-    </div>
-  </a>
-</div>
-
-    </div>
-
-  <div class="col-lg-4 col-md-6 mb-4">
-      <div class="wow animated fadeIn h-100" data-wow-delay=".15s">
-  <a href="https://paulan94.github.io/GamePANPortfolio/blog/mko-portfolio" class="project card text-themed h-100 d-flex flex-column"><div class="project-image-wrapper">
-      <img id="mortal-kombat-onslaught-img" class="card-img-top" src="https://assetsio.reedpopcdn.com/mortal-kombat-onslaught-cyrax.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp" alt="Mortal Kombat - Onslaught" loading="lazy" />
-    </div><div class="card-body d-flex flex-column flex-grow-1">
-      <h5 id="mortal-kombat-onslaught-name" class="card-title mb-2">Mortal Kombat - Onslaught
-      </h5>
-      <div id="mortal-kombat-onslaught-desc" class="card-text flex-grow-1"><p><strong>Role:</strong> Associate Game Designer</p><p>Designed and implemented characters and character abilities using UE5 Blueprints for Mortal Kombat: Onslaught. Worked with engineers, animators, artists, and producers to create a AAA mobile experience.</p></div>
-      <p id="mortal-kombat-onslaught-tools" class="card-text mb-0 mt-auto"><span class="badge badge-pill text-primary border border-primary mr-1 mb-1">Unreal</span><span class="badge badge-pill text-primary border border-primary mr-1 mb-1">Design</span><span class="badge badge-pill text-primary border border-primary mr-1 mb-1">AAA</span></p>
-    </div>
-  </a>
-</div>
-
-    </div>
-
-  <div class="col-lg-4 col-md-6 mb-4">
-      <div class="wow animated fadeIn h-100" data-wow-delay=".15s">
-  <a href="https://paulan94.github.io/GamePANPortfolio/blog/windwalker-portfolio" class="project card text-themed h-100 d-flex flex-column"><div class="project-image-wrapper">
-      <img id="windwalker-img" class="card-img-top" src="https://gamerpaul648468864.files.wordpress.com/2022/06/ww-starting-area.png" alt="WindWalker" loading="lazy" />
-    </div><div class="card-body d-flex flex-column flex-grow-1">
-      <h5 id="windwalker-name" class="card-title mb-2">WindWalker
-      </h5>
-      <div id="windwalker-desc" class="card-text flex-grow-1"><p><strong>Role:</strong> Game Designer / Programmer</p><p>Windwalker is a 3D turn-based RPG where players collect loot from combat and other encounters to cleanse the plague stirring in the fantastical world of Qubis. Enjoy a hand-crafted world, thousands of unique items and creatures, and acquire powerful pets to fight alongside you.</p></div>
-      <p id="windwalker-tools" class="card-text mb-0 mt-auto"><span class="badge badge-pill text-primary border border-primary mr-1 mb-1">Unity</span><span class="badge badge-pill text-primary border border-primary mr-1 mb-1">Design</span><span class="badge badge-pill text-primary border border-primary mr-1 mb-1">Android</span></p>
-    </div>
-  </a>
-</div>
-
-    </div>
-
-  <div class="col-lg-4 col-md-6 mb-4">
-      <div class="wow animated fadeIn h-100" data-wow-delay=".15s">
-  <a href="https://paulan94.github.io/GamePANPortfolio/blog/potty-portfolio" class="project card text-themed h-100 d-flex flex-column"><div class="project-image-wrapper">
-      <img id="potty-power-img" class="card-img-top" src="https://i.imgur.com/mZFu3jJ.png" alt="Potty Power" loading="lazy" />
-    </div><div class="card-body d-flex flex-column flex-grow-1">
-      <h5 id="potty-power-name" class="card-title mb-2">Potty Power
-      </h5>
-      <div id="potty-power-desc" class="card-text flex-grow-1"><p><strong>Role:</strong> Solo Developer</p><p>A retro-arcade style minigame where players aim their potty stream to score points. Features power-ups, time extensions, and increasing difficulty. Available on Google Play Store.</p></div>
-      <p id="potty-power-tools" class="card-text mb-0 mt-auto"><span class="badge badge-pill text-primary border border-primary mr-1 mb-1">Unity</span><span class="badge badge-pill text-primary border border-primary mr-1 mb-1">C#</span><span class="badge badge-pill text-primary border border-primary mr-1 mb-1">Android</span></p>
-    </div>
-  </a>
-</div>
-
-    </div>
-
-  <div class="col-lg-4 col-md-6 mb-4">
-      <div class="wow animated fadeIn h-100" data-wow-delay=".15s">
-  <a href="https://paulan94.github.io/GamePANPortfolio/blog/dog-portfolio" class="project card text-themed h-100 d-flex flex-column"><div class="project-image-wrapper">
-      <img id="dog-bao-edition-img" class="card-img-top" src="https://img.itch.zone/aW1hZ2UvMTAxODMwNy81ODAxNjE1LnBuZw==/original/RWOYJQ.png" alt="dog (Bao Edition)" loading="lazy" />
-    </div><div class="card-body d-flex flex-column flex-grow-1">
-      <h5 id="dog-bao-edition-name" class="card-title mb-2">dog (Bao Edition)
-      </h5>
-      <div id="dog-bao-edition-desc" class="card-text flex-grow-1"><p><strong>Role:</strong> Solo Developer</p><p>A narrative-driven game featuring multiple minigames, dedicated to my pomeranian Bao. Players explore a Southern California apartment and complete missions while the owners are away. Created in 1 month as a passion project.</p></div>
-      <p id="dog-bao-edition-tools" class="card-text mb-0 mt-auto"><span class="badge badge-pill text-primary border border-primary mr-1 mb-1">Unity</span><span class="badge badge-pill text-primary border border-primary mr-1 mb-1">C#</span></p>
-    </div>
-  </a>
-</div>
-
-    </div>
-
-  <div class="col-lg-4 col-md-6 mb-4">
-      <div class="wow animated fadeIn h-100" data-wow-delay=".15s">
-  <a href="https://paulan94.github.io/GamePANPortfolio/blog/factory-portfolio" class="project card text-themed h-100 d-flex flex-column"><div class="project-image-wrapper">
-      <img id="factory-reset-img" class="card-img-top" src="https://img.itch.zone/aW1hZ2UvMTExOTg3Ni82NDc1MTY0LnBuZw==/347x500/7qTZyY.png" alt="Factory Reset" loading="lazy" />
-    </div><div class="card-body d-flex flex-column flex-grow-1">
-      <h5 id="factory-reset-name" class="card-title mb-2">Factory Reset
-      </h5>
-      <div id="factory-reset-desc" class="card-text flex-grow-1"><p><strong>Role:</strong> Game Designer / Programmer</p><p>A PC hack-and-slash ARPG created for a Game Jam, featuring a robust crafting system and thousands of unique loot combinations. Fast-paced combat with RPG progression elements.</p></div>
-      <p id="factory-reset-tools" class="card-text mb-0 mt-auto"><span class="badge badge-pill text-primary border border-primary mr-1 mb-1">Unity</span><span class="badge badge-pill text-primary border border-primary mr-1 mb-1">C#</span><span class="badge badge-pill text-primary border border-primary mr-1 mb-1">PC</span></p>
-    </div>
-  </a>
-</div>
-
-    </div>
-
-  <div class="col-lg-4 col-md-6 mb-4">
-      <div class="wow animated fadeIn h-100" data-wow-delay=".15s">
-  <a href="https://paulan94.github.io/GamePANPortfolio/blog/dfwp-portfolio" class="project card text-themed h-100 d-flex flex-column"><div class="project-image-wrapper">
-      <img id="deathfall-wolfpine-img" class="card-img-top" src="https://i.imgur.com/ICAsYsJ.png" alt="Deathfall Wolfpine" loading="lazy" />
-    </div><div class="card-body d-flex flex-column flex-grow-1">
-      <h5 id="deathfall-wolfpine-name" class="card-title mb-2">Deathfall Wolfpine
-      </h5>
-      <div id="deathfall-wolfpine-desc" class="card-text flex-grow-1"><p><strong>Role:</strong> Game Designer / Programmer</p><p>A 1v1 arena PvP game featuring best-of-7 combat matches. Includes a modular weapon system (hilt, pommel, blade combinations) and real-time multiplayer networking using Photon PUN2. Built with Unity HDRP for high-fidelity graphics.</p></div>
-      <p id="deathfall-wolfpine-tools" class="card-text mb-0 mt-auto"><span class="badge badge-pill text-primary border border-primary mr-1 mb-1">Unity</span><span class="badge badge-pill text-primary border border-primary mr-1 mb-1">C#</span><span class="badge badge-pill text-primary border border-primary mr-1 mb-1">Multiplayer</span><span class="badge badge-pill text-primary border border-primary mr-1 mb-1">PC</span></p>
-    </div>
-  </a>
-</div>
-
-    </div>
-
-  <div class="col-lg-4 col-md-6 mb-4">
-      <div class="wow animated fadeIn h-100" data-wow-delay=".15s">
-  <a href="https://paulan94.github.io/GamePANPortfolio/blog/elwood-portfolio" class="project card text-themed h-100 d-flex flex-column"><div class="project-image-wrapper">
-      <img id="elwood-img" class="card-img-top" src="https://i.imgur.com/fHxjMpb.png" alt="Elwood" loading="lazy" />
-    </div><div class="card-body d-flex flex-column flex-grow-1">
-      <h5 id="elwood-name" class="card-title mb-2">Elwood
-      </h5>
-      <div id="elwood-desc" class="card-text flex-grow-1"><p><strong>Role:</strong> Game Designer / Programmer</p><p>A turn-based RPG prototype featuring combat abilities, patrolling enemies, and a linear progression system. My first 3D Unity project where I handled level design, combat design, and programming.</p></div>
-      <p id="elwood-tools" class="card-text mb-0 mt-auto"><span class="badge badge-pill text-primary border border-primary mr-1 mb-1">Unity</span><span class="badge badge-pill text-primary border border-primary mr-1 mb-1">C#</span><span class="badge badge-pill text-primary border border-primary mr-1 mb-1">PC</span></p>
-    </div>
-  </a>
-</div>
-
-    </div>
-
-  <div class="col-lg-4 col-md-6 mb-4">
-      <div class="wow animated fadeIn h-100" data-wow-delay=".15s">
-  <a href="https://paulan94.github.io/GamePANPortfolio/blog/superpaulo-portfolio" class="project card text-themed h-100 d-flex flex-column"><div class="project-image-wrapper">
-      <img id="super-paulo-man-img" class="card-img-top" src="https://i.imgur.com/OP74YqV.png" alt="Super Paulo Man" loading="lazy" />
-    </div><div class="card-body d-flex flex-column flex-grow-1">
-      <h5 id="super-paulo-man-name" class="card-title mb-2">Super Paulo Man
-      </h5>
-      <div id="super-paulo-man-desc" class="card-text flex-grow-1"><p><strong>Role:</strong> Solo Developer</p><p>A classic 2D platformer inspired by retro platforming games. Features traditional jumping mechanics, enemy combat, and level progression. Playable in WebGL.</p></div>
-      <p id="super-paulo-man-tools" class="card-text mb-0 mt-auto"><span class="badge badge-pill text-primary border border-primary mr-1 mb-1">Unity</span><span class="badge badge-pill text-primary border border-primary mr-1 mb-1">C#</span><span class="badge badge-pill text-primary border border-primary mr-1 mb-1">WEBGL</span></p>
-    </div>
-  </a>
-</div>
-
-    </div>
-
-  
+  <div class="work-grid"><a class="work-card" data-cat="pro" href="/blog/dropfake-portfolio">
+      <div class="work-card-media"><img src="https://framerusercontent.com/assets/R2FNnrJMv4ceelipIQNWCL1jw.png" alt="Drop Fake" loading="lazy"></div>
+      <div class="work-card-body">
+        <h3 class="work-card-title">Drop Fake</h3>
+        <div class="work-card-meta"><span class="role-pill">Senior Game Designer</span><span class="work-card-year">2024 to present</span></div><p class="work-card-blurb">Combat features and character kits for a live AAA fighting game, owned from spec to ship.</p><div class="tags"><span class="tag">Unity</span><span class="tag">Design</span><span class="tag">AAA</span><span class="tag">Mobile</span></div>
+      </div>
+    </a><a class="work-card" data-cat="pro" href="/blog/mko-portfolio">
+      <div class="work-card-media"><img src="https://assetsio.reedpopcdn.com/mortal-kombat-onslaught-cyrax.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp" alt="Mortal Kombat: Onslaught" loading="lazy"></div>
+      <div class="work-card-body">
+        <h3 class="work-card-title">Mortal Kombat: Onslaught</h3>
+        <div class="work-card-meta"><span class="role-pill">Game Designer · NetherRealm</span><span class="work-card-year">2023 to 2024</span></div><p class="work-card-blurb">Built and tuned playable characters in Unreal for a mobile fighter that launched at number one.</p><div class="tags"><span class="tag">Unreal</span><span class="tag">Character abilities</span><span class="tag">AAA</span></div>
+      </div>
+    </a><a class="work-card" data-cat="build" href="/blog/windwalker-portfolio">
+      <div class="work-card-media"><img src="https://gamerpaul648468864.files.wordpress.com/2022/06/ww-starting-area.png" alt="WindWalker" loading="lazy"></div>
+      <div class="work-card-body">
+        <h3 class="work-card-title">WindWalker</h3>
+        <div class="work-card-meta"><span class="role-pill">Designer &amp; Programmer</span><span class="work-card-year">2021 to 2023</span></div><p class="work-card-blurb">A 3D turn based RPG with thousands of items and collectible pets, designed and built end to end.</p><div class="tags"><span class="tag">Unity</span><span class="tag">Systems</span><span class="tag">RPG</span></div>
+      </div>
+    </a><a class="work-card" data-cat="build" href="/blog/factory-portfolio">
+      <div class="work-card-media"><img src="https://img.itch.zone/aW1hZ2UvMTExOTg3Ni82NDc1MTY0LnBuZw==/347x500/7qTZyY.png" alt="Factory Reset" loading="lazy"></div>
+      <div class="work-card-body">
+        <h3 class="work-card-title">Factory Reset</h3>
+        <div class="work-card-meta"><span class="role-pill">Designer &amp; Programmer</span><span class="work-card-year">2021</span></div><p class="work-card-blurb">A fast hack and slash ARPG with deep crafting and loot, made in a game jam.</p><div class="tags"><span class="tag">Unity</span><span class="tag">Loot systems</span><span class="tag">ARPG</span></div>
+      </div>
+    </a><a class="work-card" data-cat="solo" href="/blog/potty-portfolio">
+      <div class="work-card-media"><img src="https://i.imgur.com/mZFu3jJ.png" alt="Potty Power" loading="lazy"></div>
+      <div class="work-card-body">
+        <h3 class="work-card-title">Potty Power</h3>
+        <div class="work-card-meta"><span class="role-pill">Solo Developer</span><span class="work-card-year">2022</span></div><p class="work-card-blurb">A published arcade scoring game with power ups and escalating difficulty.</p><div class="tags"><span class="tag">Unity</span><span class="tag">Android</span><span class="tag">Published</span></div>
+      </div>
+    </a><a class="work-card" data-cat="solo" href="/blog/dog-portfolio">
+      <div class="work-card-media"><img src="https://img.itch.zone/aW1hZ2UvMTAxODMwNy81ODAxNjE1LnBuZw==/original/RWOYJQ.png" alt="dog (Bao Edition)" loading="lazy"></div>
+      <div class="work-card-body">
+        <h3 class="work-card-title">dog (Bao Edition)</h3>
+        <div class="work-card-meta"><span class="role-pill">Solo Developer</span><span class="work-card-year">2021</span></div><p class="work-card-blurb">A narrative mini game collection set in one apartment, made in a month for my dog Bao.</p><div class="tags"><span class="tag">Unity</span><span class="tag">Narrative</span><span class="tag">Minigames</span></div>
+      </div>
+    </a><a class="work-card" data-cat="build" href="/blog/elwood-portfolio">
+      <div class="work-card-media"><img src="https://i.imgur.com/fHxjMpb.png" alt="Elwood" loading="lazy"></div>
+      <div class="work-card-body">
+        <h3 class="work-card-title">Elwood</h3>
+        <div class="work-card-meta"><span class="role-pill">Designer &amp; Programmer</span><span class="work-card-year">2020</span></div><p class="work-card-blurb">My first 3D project. A turn based RPG prototype where I learned level and combat design.</p><div class="tags"><span class="tag">Unity</span><span class="tag">Turn based</span><span class="tag">RPG</span></div>
+      </div>
+    </a><a class="work-card" data-cat="solo" href="/blog/superpaulo-portfolio">
+      <div class="work-card-media"><img src="https://i.imgur.com/OP74YqV.png" alt="Super Paulo Man" loading="lazy"></div>
+      <div class="work-card-body">
+        <h3 class="work-card-title">Super Paulo Man</h3>
+        <div class="work-card-meta"><span class="role-pill">Solo Developer</span><span class="work-card-year">2020</span></div><p class="work-card-blurb">A classic 2D platformer built to learn core game feel and level design.</p><div class="tags"><span class="tag">Unity</span><span class="tag">2D Platformer</span><span class="tag">WebGL</span></div>
+      </div>
+    </a></div>
 
 </div>
 
   </main>
-  <footer class="mt-auto py-3 text-center">
 
-  <small class="text-muted mb-2">
-    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
-    by <strong>Paul An</strong>
-  </small>
-
-  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="mailto:paulan94@gmail.com"aria-label="Email"
-       title="Email"
-       style="color: #6c757d"
-       onMouseOver="this.style.color='#db4437'"
-       onMouseOut="this.style.color='#6c757d'">
-      <i class="fas fa-envelope fa-1x"></i>
-    </a><a class="social mx-1"  href="https://www.github.com/paulan94"target="_blank" rel="noopener noreferrer"aria-label="Github"
-       title="Github"
-       style="color: #6c757d"
-       onMouseOver="this.style.color='#333333'"
-       onMouseOut="this.style.color='#6c757d'">
-      <i class="fab fa-github fa-1x"></i>
-    </a><a class="social mx-1"  href="https://www.linkedin.com/in/cspaulan"target="_blank" rel="noopener noreferrer"aria-label="Linkedin"
-       title="Linkedin"
-       style="color: #6c757d"
-       onMouseOver="this.style.color='#007bb5'"
-       onMouseOut="this.style.color='#6c757d'">
-      <i class="fab fa-linkedin-in fa-1x"></i>
-    </a>
-
-</div>
-<small id="attribution">
-    theme <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a>
-  </small>
-
+  <footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <h3>Let&rsquo;s talk game design.</h3>
+      <div class="foot-links">
+        <a href="mailto:paulan94@gmail.com">paulan94@gmail.com</a>
+        <a href="https://www.linkedin.com/in/cspaulan/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        <a href="https://github.com/paulan94" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        <a href="https://drive.google.com/file/d/18WpJPNb7b5J_euQh8_YCxk6d3zXE9VBC/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Résumé ↗</a>
+      </div>
+    </div>
+    <div class="colophon">
+      <span>© 2026 Paul An</span>
+      <span>Knight &amp; effect sprites by Kin Ng</span>
+      <span class="mono" style="letter-spacing:.1em">Designed &amp; built from scratch</span>
+    </div>
+  </div>
 </footer>
 
-  
-  <!-- GitHub Buttons -->
-<script async defer src="https://buttons.github.io/buttons.js"></script>
+  <div class="fx-layer-back" id="pix-fx-back" aria-hidden="true"></div>
+<div class="avatar is-idle face-left" id="pix-avatar" aria-hidden="true" data-sprites="/assets/sprites/">
+  <img class="avatar-frame" id="pix-frame" alt="" src="/assets/sprites/knight/Knight_idle_01.png" />
+  <div class="avatar-hitbox" id="pix-hitbox"></div>
+</div>
+<div class="fx-layer" id="pix-fx" aria-hidden="true"></div>
 
-<!-- jQuery CDN -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-<!-- Popper.js CDN -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
-
-<!-- Bootstrap JS CDN -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-<!-- wow.js CDN & Activation -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
-<script> new WOW().init(); </script>
-
-<!-- Initialize all tooltips -->
-<script>
-$(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-})
+  <script>
+  // Mobile nav toggle
+  (function () {
+    var btn = document.getElementById('nav-toggle');
+    var links = document.getElementById('nav-links');
+    if (!btn || !links) return;
+    btn.addEventListener('click', function () {
+      var open = links.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    links.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A') {
+        links.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  })();
 </script>
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="paulan94e" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting." data-color="#007bff" data-position="Right" data-x_margin="16" data-y_margin="16"></script></body>
+
+  <script src="/assets/js/avatar.js" defer></script>
+</body>
 
 </html>

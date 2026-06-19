@@ -27,7 +27,11 @@ I also may have accidentally leaked some unreleased characters in my time there.
 
 ## A Retrospective
 
-I have to preface by saying that
+I was an associate designer, and I definitely felt like one. I was shy and scared to speak my mind, but I learned over time that this would hinder my growth. I wish I came out of my shell more and made a stronger concerted effort to make uncomfortable riskier career decisions.
+
+I think a large part of why Mortal Kombat Onslaught closed 1 year after release was related to its lack of social features. Now maybe some business decisions and user acquisition funnels could have lifted it afloat until those features were built out, but I won't speak to that because that was beyond my control and scope. I will say that we did have plans to build those features out. Guilds, social related content, but it was unfortunately scoped out before world wide release.
+
+Thinking more broadly about the people I worked with, I genuinely learned a lot of working alongside Mick Pack and Bill Buesing once Mick had moved onto a new project. From there, people were shuffled across multiple WB projects, and I could tell that the end was near. I quickly went from Associate Designer to acting like a Lead Designer in the last few months of my time there. Kyle Smyers and I were the last remaining designers on MKO, and we were eager to make changes that would address player frustrations. We were unfortunately told not to make any significant changes, and watched as our game slowly fizzled out. Looking back, it was surreal to experience how quickly it all happened, but a tremendous growth opportunity that I feel lucky to have experienced.
 
 ## Screenshots
 

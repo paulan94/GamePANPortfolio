@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Paul An — Game Designer (static preview)</title>
+<!--
+  STATIC PREVIEW ONLY. This is a self-contained snapshot of the live design so it
+  renders in the editor's preview pane. The real site is the Jekyll build at
+  http://localhost:4000/ — edit the _includes / _projects / assets files, not this one.
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F4F1EA;--surface:#FFFFFF;--ink:#17150F;--muted:#6A655A;--faint:#9A958A;
+  --hair:rgba(23,21,15,.14);--hair-soft:rgba(23,21,15,.08);
+  --accent:#1F6BFF;--accent-soft:rgba(31,107,255,.10);
+  --maxw:1180px;--pad:clamp(20px,5vw,64px);
+  --serif:"Fraunces",Georgia,serif;--sans:"Inter",system-ui,-apple-system,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;overflow-x:hidden;min-height:100vh;display:flex;flex-direction:column}
+a{color:inherit;text-decoration:none}
+img{max-width:100%}
+::selection{background:var(--accent);color:var(--paper)}
+.wrap{max-width:var(--maxw);margin:0 auto;padding-left:var(--pad);padding-right:var(--pad);width:100%}
+.mono{font-family:var(--mono);font-weight:500;letter-spacing:.14em;text-transform:uppercase;font-size:12px}
+main{flex:1 0 auto;width:100%}
+
+/* nav */
+header.site-nav{position:sticky;top:0;z-index:50;background:rgba(244,241,234,.82);backdrop-filter:saturate(140%) blur(10px);-webkit-backdrop-filter:saturate(140%) blur(10px);border-bottom:1px solid var(--hair-soft)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:68px;max-width:var(--maxw);margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
+.brand{font-family:var(--serif);font-weight:500;font-size:20px;letter-spacing:-.01em;line-height:1}
+.brand span{color:var(--accent)}
+.brand small{display:block;font-family:var(--sans);font-size:11px;letter-spacing:.04em;color:var(--muted);font-weight:400;margin-top:3px;text-transform:none}
+nav.links{display:flex;gap:34px;align-items:center}
+nav.links a{font-size:14px;color:var(--muted);transition:color .18s;position:relative}
+nav.links a:hover{color:var(--ink)}
+nav.links a.cta{color:var(--ink);border:1px solid var(--hair);border-radius:100px;padding:7px 16px;display:inline-flex;gap:7px;align-items:center}
+nav.links a.cta:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+@media(max-width:760px){nav.links a:not(.cta){display:none}}
+
+/* hero */
+.hero{padding-top:clamp(56px,9vw,104px);padding-bottom:clamp(40px,6vw,72px)}
+.kicker{display:flex;align-items:center;gap:14px;color:var(--accent);margin-bottom:30px;flex-wrap:wrap}
+.kicker .sub{color:var(--muted)}
+h1.display{font-family:var(--serif);font-weight:340;font-size:clamp(40px,7.2vw,86px);line-height:1.02;letter-spacing:-.02em;max-width:16ch}
+h1.display em{font-style:italic;color:var(--accent)}
+.lede{margin-top:30px;max-width:60ch;font-size:clamp(17px,1.6vw,20px);color:var(--muted);line-height:1.62}
+.lede strong{color:var(--ink);font-weight:500}
+.actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:38px}
+.btn{display:inline-flex;align-items:center;gap:10px;font-size:15px;font-weight:500;padding:13px 22px;border-radius:100px;border:1px solid var(--ink);transition:.2s;cursor:pointer;font-family:var(--sans)}
+.btn.primary{background:var(--ink);color:var(--paper)}
+.btn.primary:hover{background:var(--accent);border-color:var(--accent)}
+.btn.ghost{border-color:var(--hair);color:var(--ink);background:none}
+.btn.ghost:hover{border-color:var(--ink)}
+.btn .arr{transition:transform .2s}
+.btn:hover .arr{transform:translateX(3px)}
+
+/* creds */
+.creds{margin-top:clamp(44px,7vw,76px);border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);padding:26px 0}
+.creds-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.cred .label{color:var(--faint);margin-bottom:9px}
+.cred .val{font-family:var(--serif);font-size:18px;line-height:1.3}
+.cred .val small{display:block;font-family:var(--sans);font-size:13px;color:var(--muted);margin-top:3px;font-weight:400}
+@media(max-width:760px){.creds-grid{grid-template-columns:1fr 1fr;gap:28px 24px}}
+
+/* section heads */
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:14px;gap:16px;flex-wrap:wrap}
+.sec-head h2{font-family:var(--serif);font-weight:380;font-size:clamp(26px,3.4vw,38px);letter-spacing:-.015em}
+.sec-head a{font-size:14px;color:var(--muted);border-bottom:1px solid var(--hair);padding-bottom:2px;white-space:nowrap}
+.sec-head a:hover{color:var(--ink);border-color:var(--ink)}
+section.block{padding-top:clamp(58px,8vw,104px);padding-bottom:clamp(20px,4vw,40px)}
+
+/* work grid */
+.work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:34px 28px;margin-top:10px}
+.work-card{display:flex;flex-direction:column;color:var(--ink)}
+.work-card-media{aspect-ratio:16/10;overflow:hidden;border-radius:10px;border:1px solid var(--hair);background:var(--surface)}
+.work-card-media img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .45s ease}
+.work-card:hover .work-card-media img{transform:scale(1.045)}
+.work-card-body{padding-top:16px;display:flex;flex-direction:column;gap:9px}
+.work-card-title{font-family:var(--serif);font-weight:420;font-size:22px;letter-spacing:-.01em;line-height:1.15;transition:color .18s}
+.work-card:hover .work-card-title{color:var(--accent)}
+.work-card-meta{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.role-pill{font-family:var(--mono);font-size:10.5px;font-weight:500;letter-spacing:.07em;text-transform:uppercase;padding:3px 8px;border-radius:5px;white-space:nowrap}
+.work-card-year{font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:var(--muted)}
+.work-card-blurb{font-size:14.5px;line-height:1.5;color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:8px}
+.tag{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);border:1px solid var(--hair);border-radius:4px;padding:3px 8px}
+.work-card .tags{margin-top:2px}
+.work-card[data-cat="pro"] .role-pill{color:#1F6BFF;background:rgba(31,107,255,.10)}
+.work-card[data-cat="build"] .role-pill{color:#3F7D4F;background:rgba(63,125,79,.12)}
+.work-card[data-cat="solo"] .role-pill{color:#B07A2F;background:rgba(176,122,47,.14)}
+.work-card[data-cat="pro"] .tag{color:#1F6BFF;border-color:rgba(31,107,255,.32)}
+.work-card[data-cat="build"] .tag{color:#3F7D4F;border-color:rgba(63,125,79,.34)}
+.work-card[data-cat="solo"] .tag{color:#B07A2F;border-color:rgba(176,122,47,.36)}
+@media(max-width:900px){.work-grid{grid-template-columns:1fr 1fr;gap:30px 22px}}
+@media(max-width:560px){.work-grid{grid-template-columns:1fr;gap:28px}}
+
+/* footer */
+footer.site-foot{flex-shrink:0;border-top:1px solid var(--hair);padding:clamp(48px,7vw,84px) 0 56px;margin-top:clamp(40px,7vw,90px)}
+.foot-grid{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:18px 40px}
+.foot-grid h3{font-family:var(--serif);font-weight:380;font-size:clamp(24px,3.2vw,34px);line-height:1.1;letter-spacing:-.015em}
+.foot-links{display:flex;flex-flow:row wrap;align-items:center;gap:12px 24px}
+.foot-links a{color:var(--muted);font-size:15px;transition:color .18s}
+.foot-links a:hover{color:var(--accent)}
+.colophon{display:flex;justify-content:space-between;color:var(--faint);font-size:13px;margin-top:48px;flex-wrap:wrap;gap:8px}
+@media(max-width:680px){.foot-grid{align-items:flex-start;flex-direction:column;gap:16px}}
+</style>
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a class="brand" href="#">Paul An<span>.</span><small>Senior Game Designer · Combat</small></a>
+    <nav class="links">
+      <a href="#">Work</a>
+      <a href="#">Writing</a>
+      <a href="#">About</a>
+      <a class="cta" href="#">Résumé <span aria-hidden="true">↗</span></a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <div class="kicker mono">Senior Game Designer <span class="sub">· Combat &amp; systems</span></div>
+    <h1 class="display">I design game systems with a specialty in <em>combat</em>.</h1>
+    <p class="lede">
+      I own features end to end, from the first paper spec to the build that ships.
+      That means writing the design, putting it in Unity, tuning the numbers, and getting
+      it to feel right in the player&rsquo;s hands. I came up through software and gameplay
+      engineering, so I work in the code under my systems instead of just handing off a spec.
+    </p>
+    <div class="actions">
+      <a class="btn primary" href="#">View selected work <span class="arr" aria-hidden="true">→</span></a>
+      <a class="btn ghost" href="#">Read my writing</a>
+    </div>
+
+    <div class="creds">
+      <div class="creds-grid">
+        <div class="cred"><div class="label mono">Now</div><div class="val">AAA mobile<small>Fighting game · combat &amp; kits</small></div></div>
+        <div class="cred"><div class="label mono">Previously</div><div class="val">NetherRealm<small>Mortal Kombat: Onslaught</small></div></div>
+        <div class="cred"><div class="label mono">Before design</div><div class="val">Meta · Boeing<small>Software engineering</small></div></div>
+        <div class="cred"><div class="label mono">Based in</div><div class="val">Bay Area<small>San Francisco, CA</small></div></div>
+      </div>
+    </div>
+  </div>
+
+  <section class="wrap block" id="work">
+    <div class="sec-head">
+      <h2>Selected work</h2>
+      <a href="#">All projects →</a>
+    </div>
+    <div class="work-grid">
+
+      <a class="work-card" data-cat="pro" href="#">
+        <div class="work-card-media"><img src="https://framerusercontent.com/assets/R2FNnrJMv4ceelipIQNWCL1jw.png" alt="Drop Fake" loading="lazy"></div>
+        <div class="work-card-body">
+          <h3 class="work-card-title">Drop Fake</h3>
+          <div class="work-card-meta"><span class="role-pill">Senior Game Designer</span><span class="work-card-year">2024 to present</span></div>
+          <p class="work-card-blurb">Combat features and character kits for a live AAA fighting game, owned from spec to ship.</p>
+          <div class="tags"><span class="tag">Unity</span><span class="tag">Design</span><span class="tag">AAA</span><span class="tag">Mobile</span></div>
+        </div>
+      </a>
+
+      <a class="work-card" data-cat="pro" href="#">
+        <div class="work-card-media"><img src="https://assetsio.reedpopcdn.com/mortal-kombat-onslaught-cyrax.jpg?width=600&height=375&fit=bounds&quality=70&format=jpg&auto=webp" alt="Mortal Kombat: Onslaught" loading="lazy"></div>
+        <div class="work-card-body">
+          <h3 class="work-card-title">Mortal Kombat: Onslaught</h3>
+          <div class="work-card-meta"><span class="role-pill">Game Designer · NetherRealm</span><span class="work-card-year">2023 to 2024</span></div>
+          <p class="work-card-blurb">Built and tuned playable characters in Unreal for a mobile fighter that launched at number one.</p>
+          <div class="tags"><span class="tag">Unreal</span><span class="tag">Character abilities</span><span class="tag">AAA</span></div>
+        </div>
+      </a>
+
+      <a class="work-card" data-cat="build" href="#">
+        <div class="work-card-media"><img src="https://gamerpaul648468864.files.wordpress.com/2022/06/ww-starting-area.png" alt="WindWalker" loading="lazy"></div>
+        <div class="work-card-body">
+          <h3 class="work-card-title">WindWalker</h3>
+          <div class="work-card-meta"><span class="role-pill">Designer &amp; Programmer</span><span class="work-card-year">2021 to 2023</span></div>
+          <p class="work-card-blurb">A 3D turn based RPG with thousands of items and collectible pets, designed and built end to end.</p>
+          <div class="tags"><span class="tag">Unity</span><span class="tag">Systems</span><span class="tag">RPG</span></div>
+        </div>
+      </a>
+
+      <a class="work-card" data-cat="build" href="#">
+        <div class="work-card-media"><img src="https://img.itch.zone/aW1hZ2UvMTExOTg3Ni82NDc1MTY0LnBuZw==/347x500/7qTZyY.png" alt="Factory Reset" loading="lazy"></div>
+        <div class="work-card-body">
+          <h3 class="work-card-title">Factory Reset</h3>
+          <div class="work-card-meta"><span class="role-pill">Designer &amp; Programmer</span><span class="work-card-year">2021</span></div>
+          <p class="work-card-blurb">A fast hack and slash ARPG with deep crafting and loot, made in a game jam.</p>
+          <div class="tags"><span class="tag">Unity</span><span class="tag">Loot systems</span><span class="tag">ARPG</span></div>
+        </div>
+      </a>
+
+      <a class="work-card" data-cat="solo" href="#">
+        <div class="work-card-media"><img src="https://i.imgur.com/mZFu3jJ.png" alt="Potty Power" loading="lazy"></div>
+        <div class="work-card-body">
+          <h3 class="work-card-title">Potty Power</h3>
+          <div class="work-card-meta"><span class="role-pill">Solo Developer</span><span class="work-card-year">2022</span></div>
+          <p class="work-card-blurb">A published arcade scoring game with power ups and escalating difficulty.</p>
+          <div class="tags"><span class="tag">Unity</span><span class="tag">Android</span><span class="tag">Published</span></div>
+        </div>
+      </a>
+
+      <a class="work-card" data-cat="solo" href="#">
+        <div class="work-card-media"><img src="https://img.itch.zone/aW1hZ2UvMTAxODMwNy81ODAxNjE1LnBuZw==/original/RWOYJQ.png" alt="dog (Bao Edition)" loading="lazy"></div>
+        <div class="work-card-body">
+          <h3 class="work-card-title">dog (Bao Edition)</h3>
+          <div class="work-card-meta"><span class="role-pill">Solo Developer</span><span class="work-card-year">2021</span></div>
+          <p class="work-card-blurb">A narrative mini game collection set in one apartment, made in a month for my dog Bao.</p>
+          <div class="tags"><span class="tag">Unity</span><span class="tag">Narrative</span><span class="tag">Minigames</span></div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <h3>Let&rsquo;s talk game design.</h3>
+      <div class="foot-links">
+        <a href="mailto:paulan94@gmail.com">paulan94@gmail.com</a>
+        <a href="#">LinkedIn ↗</a>
+        <a href="#">GitHub ↗</a>
+        <a href="#">Résumé ↗</a>
+      </div>
+    </div>
+    <div class="colophon">
+      <span>© 2026 Paul An</span>
+      <span class="mono" style="letter-spacing:.1em">Designed &amp; built from scratch</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,7 +1,8 @@
 ### Site Settings ###
-title               : Paul's Portfolio
+title               : Paul An
 description         : >-
-                      Game Designer hailing from Los Angeles, California
+                      Senior game designer specializing in fighting game combat and character systems.
+resume_url          : https://drive.google.com/file/d/18WpJPNb7b5J_euQh8_YCxk6d3zXE9VBC/view?usp=drive_link
 # baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : paulan94/paulan94.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : YoussefRaafatNasry/portfolYOU
@@ -72,7 +73,7 @@ analytics:
 ### Buy me a coffee ###
 # See https://www.buymeacoffee.com/
 buymeacoffee:
-  enabled: true
+  enabled: false
   username: paulan94e
   color: "#007bff"
   message: "Thank you for visiting."                    # Message to be displayed aside from the button for a few seconds.
@@ -99,3 +100,6 @@ exclude:
   - CONTRIBUTING.md
   - LICENSE
   - "*.log"
+  - "*.meta"
+  - "Knight PNG"
+  - "Effect & FireBalls"

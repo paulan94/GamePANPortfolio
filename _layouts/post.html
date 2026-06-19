@@ -1,37 +1,35 @@
 ---
-layout: page
+layout: default
 ---
 
-<h1><b>{{ page.title }}</b></h1>
+<div class="wrap page">
 
-<p class="post-metadata text-muted">
-  {{ page.date | date_to_long_string }} -  
-  <b>
-  {%- assign words = content | number_of_words -%}
-  {%- if words < 360 -%}
-    less than 1 min read time
-  {%- else -%}
-    {{ words | divided_by: 180 }} mins read time
-  {%- endif -%}
-  </b>
+  <a class="post-back" href="{{ '/blog/' | relative_url }}">← Writing</a>
 
-  <br>
+  <header class="post-head">
+    <h1>{{ page.title }}</h1>
+    <div class="post-meta">
+      <span>{{ page.date | date_to_long_string }}</span>
+      <span class="dot"></span>
+      {%- assign words = content | number_of_words -%}
+      <span>
+        {%- if words < 360 -%}~1 min read{%- else -%}{{ words | divided_by: 180 }} min read{%- endif -%}
+      </span>
+      {%- if page.tags != empty -%}
+        <span class="dot"></span>
+        {% for tag in page.tags %}<a class="tag" href="{{ tag | slugify | prepend:'/blog/tags#' | relative_url }}">{{ tag }}</a>{% endfor %}
+      {%- endif -%}
+    </div>
+  </header>
 
-  {%- if page.tags != empty -%}
-    Tags: 
-    {% for tag in page.tags %}
-    <a class="text-decoration-none no-underline" href="{{ tag | slugify | prepend:'/blog/tags#' | relative_url }}">
-      <span class="tag badge badge-pill text-primary border border-primary">{{ tag }}</span>
-    </a>
-    {% endfor %}
-  {%- endif -%}
+  <article class="prose">
+    {{ content }}
+  </article>
 
-</p>
+  {% if page.comments %}
+  <div style="margin-top:48px">
+    {% include blog/disqus.html %}
+  </div>
+  {% endif %}
 
-{{ content }}
-
-{% if page.comments %}
-<div class="pt-5">
-  {% include blog/disqus.html %}
 </div>
-{% endif %}

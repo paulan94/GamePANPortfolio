@@ -1,62 +1,24 @@
-
-<div class="row m-3 mt-5">
-
-  <!-- Remote Projects -->
-  {% for remote_project in page.remote_projects %}
-
-    {%- for repo in site.github.public_repositories -%}
-
-      {%- if remote_project == repo.name -%}
-
-        {%- assign project = repo -%}
-        {%- assign words = project.name | split: '-' -%}
-        
-        {%- capture titlecase -%}
-          {%- for word in words -%}
-            {{ word | capitalize | append: ' ' }}
-          {%- endfor -%}
-        {%- endcapture -%}
-
-        {%- assign project_type  = "remote" -%}
-        {%- assign project_id    = project.name -%}
-        {%- assign project_img   = false -%}
-        {%- assign project_name  = titlecase | strip -%}
-        {%- assign project_desc  = project.description -%}
-        {%- assign project_url   = project.html_url -%}
-        {%- assign project_tools = project.topics -%}
-        {%- assign external      = true -%}
-
-        {% include projects/project-card.html %}
-
-      {%- endif -%}
-
-    {%- endfor -%}
-
-  {% endfor %}
-
-  <!-- Local Projects -->
-  {% assign sorted_projects = site.projects | sort: 'order' %}
-  {% for project in sorted_projects %}
-
-    {%- assign project_type  = "local" -%}
-    {%- assign project_id    = project.name | slugify -%}
-    {%- assign project_img   = project.image -%}
-    {%- assign project_name  = project.name -%}
-    {%- assign project_desc  = project.description -%}
-    {%- assign project_tools = project.tools -%}
-
-    {%- if project.external_url -%}
-      {%- assign project_url = project.external_url -%}
-      {%- assign external    = true -%}
+<div class="work-grid">
+  {%- assign sorted_projects = site.projects | sort: 'order' -%}
+  {%- for project in sorted_projects -%}
+    {%- if project.case_study -%}
+      {%- assign url = project.case_study | relative_url -%}
     {%- else -%}
-      {%- assign project_url = project.url | relative_url -%}
-      {%- assign external    = false -%}
+      {%- assign url = project.url | relative_url -%}
     {%- endif -%}
-
-    <div class="col-lg-4 col-md-6 mb-4">
-      {% include projects/project-card.html %}
-    </div>
-
-  {% endfor %}
-
+    <a class="work-card" data-cat="{{ project.category }}" href="{{ url }}">
+      <div class="work-card-media">
+        {%- if project.image -%}<img src="{{ project.image }}" alt="{{ project.name }}" loading="lazy">{%- endif -%}
+      </div>
+      <div class="work-card-body">
+        <h3 class="work-card-title">{{ project.name }}</h3>
+        <div class="work-card-meta">
+          {%- if project.role -%}<span class="role-pill">{{ project.role }}</span>{%- endif -%}
+          {%- if project.year -%}<span class="work-card-year">{{ project.year }}</span>{%- endif -%}
+        </div>
+        {%- if project.blurb -%}<p class="work-card-blurb">{{ project.blurb }}</p>{%- endif -%}
+        <div class="tags">{% for t in project.tools %}<span class="tag">{{ t }}</span>{% endfor %}</div>
+      </div>
+    </a>
+  {%- endfor -%}
 </div>

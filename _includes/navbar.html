@@ -1,68 +1,22 @@
-<nav class="navbar navbar-expand-lg navbar-themed" aria-label="Primary">
+{%- assign resume_url = site.resume_url -%}
+<header class="site-nav">
+  <div class="nav-inner">
 
-  <a class="navbar-brand" href="{{ site.baseurl }}/">
-    <h5 class="mb-0"><b>{{ site.author.name }}</b></h5>
-    <small class="text-muted d-none d-md-inline">Senior Gameplay Designer</small>
-  </a>
+    <a class="brand" href="{{ '/' | relative_url }}">
+      {{ site.author.name }}<span>.</span>
+      <small>Senior Game Designer · Combat</small>
+    </a>
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <i class="fas fa-1x fa-bars text-themed"></i>
-  </button>
+    <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+      <span></span>
+    </button>
 
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav ml-auto">
+    <nav class="links" id="nav-links" aria-label="Primary">
+      <a href="{{ '/projects/' | relative_url }}" {% if page.url contains '/projects' %}class="active" aria-current="page"{% endif %}>Work</a>
+      <a href="{{ '/blog/' | relative_url }}" {% if page.url contains '/blog' %}class="active" aria-current="page"{% endif %}>Writing</a>
+      <a href="{{ '/about/' | relative_url }}" {% if page.url contains '/about' %}class="active" aria-current="page"{% endif %}>About</a>
+      <a class="cta" href="{{ resume_url }}" target="_blank" rel="noopener noreferrer">Résumé <span aria-hidden="true">↗</span></a>
+    </nav>
 
-      {%- assign html_pages = site.html_pages | sort: 'weight' -%}
-      {%- assign filtered_pages = "" | split: "" -%}
-
-      {%- for html_page in html_pages -%} 
-
-        {%- assign exclude = false -%}
-
-        {%- for exclude_path in site.nav_exclude -%}
-
-          {%- if exclude_path == html_page.path -%}
-            {%- assign exclude = true -%}
-            {%- break -%}
-          {%- elsif exclude_path contains '**' -%}
-            {%- assign match = exclude_path | remove: '**' -%}
-            {%- if html_page.path contains match -%}
-              {%- assign exclude = true -%}
-              {%- break -%}
-            {%- endif -%}
-          {%- endif -%}
-
-        {%- endfor -%}
-
-        {%- unless exclude -%}
-          {%- assign filtered_pages = filtered_pages | push: html_page -%}
-        {%- endunless -%}
-
-      {%- endfor -%}
-
-      {% for html_page in filtered_pages %}  
-
-        {%- if page.url contains html_page.url -%}
-          {%- assign active_status = "active" -%}
-        {%- else -%}
-          {%- assign active_status = "" -%}
-        {%- endif -%}
-
-        {%- if html_page.external_url -%}
-          {%- assign url = html_page.external_url -%}
-        {%- else -%}
-          {%- assign url = html_page.url | relative_url -%}
-        {%- endif -%}
-
-        <a class="nav-item nav-link {{ active_status }}" href="{{ url }}" {%- if html_page.external_url and site.open_new_tab -%} target="_blank" rel="noopener noreferrer" {%- endif -%} {%- if active_status == "active" -%} aria-current="page" {%- endif -%}>{{ html_page.title }}</a>
-
-      {% endfor %}
-
-      <button id="theme-toggler" class="nav-item nav-link theme-toggle-wrapper" type="button" onclick="toggleTheme()" title="Toggle dark/light mode" aria-label="Toggle dark/light mode" aria-pressed="false">
-        <span class="theme-icon"></span>
-        <span class="theme-label d-none d-md-inline ml-2"></span>
-      </button>
-    </div>
   </div>
-
-</nav>
+</header>
