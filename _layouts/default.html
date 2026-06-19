@@ -15,7 +15,8 @@
   {% include footer.html %}
   {% include avatar.html %}
   {% include scripts.html %}
-  <script src="{{ '/assets/js/avatar.js' | relative_url }}" defer></script>
+  {%- assign asset_ver = site.github.build_revision | default: site.time | date: '%s' -%}
+  <script src="{{ '/assets/js/avatar.js' | relative_url }}?v={{ asset_ver }}" defer></script>
 </body>
 
 </html>
