@@ -254,8 +254,13 @@ footer.site-foot{flex-shrink:0;border-top:1px solid var(--hair);padding:clamp(48
 .ctrl-btn{position:relative;width:40px;height:40px;border-radius:50%;border:1px solid var(--hair);background:var(--surface);color:var(--ink);display:grid;place-items:center;cursor:pointer;padding:0;transition:border-color .18s,transform .18s;box-shadow:0 2px 12px rgba(0,0,0,.10)}
 .ctrl-btn:hover{border-color:var(--ink);transform:translateY(-1px)}
 .ctrl-btn svg{width:18px;height:18px;display:block}
+.ctrl-knight svg{width:29px;height:29px}
 [data-theme="light"] .ico-sun{display:none}
 [data-theme="dark"] .ico-moon{display:none}
+.nav-theme{background:none;border:0;padding:6px;margin:0;cursor:pointer;color:var(--muted);display:inline-flex;align-items:center;line-height:0;transition:color .18s}
+.nav-theme:hover{color:var(--ink)}
+.nav-theme svg{width:19px;height:19px;display:block}
+@media(max-width:760px){.nav-theme{padding:14px 0}}
 .knight-off .ctrl-knight svg{opacity:.45}
 .knight-off .ctrl-knight::after{content:"";position:absolute;left:7px;right:7px;top:50%;height:2px;background:var(--accent);transform:rotate(-45deg);border-radius:2px}
 @media(max-width:760px){.ctrl-knight{display:none}}

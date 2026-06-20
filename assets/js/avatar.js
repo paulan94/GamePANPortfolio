@@ -283,7 +283,7 @@
     if (e.defaultPrevented) return;
     if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
     var t = e.target.closest ? e.target.closest('a[href], button') : null;
-    if (!t || t.closest('#pix-avatar') || t.closest('#site-controls')) return;
+    if (!t || t.closest('#pix-avatar') || t.closest('#site-controls') || t.closest('[data-no-avatar]')) return;
     var info = buildAction(t);
     e.preventDefault();
     e.stopPropagation();
