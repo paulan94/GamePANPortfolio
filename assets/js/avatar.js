@@ -79,6 +79,7 @@
   var home = { x: 0, y: 0 };
   var raf = null, busy = false, bypass = false, facingLeft = true, dashTimer = null;
   var clicks = 0, dead = false;
+  var enabled = !document.documentElement.classList.contains('knight-off');
 
   function place() { el.style.transform = 'translate(' + pos.x + 'px,' + pos.y + 'px)'; }
   function face(left) {
@@ -246,7 +247,7 @@
   // clicking the knight himself: random reaction, or death at DEATH_CLICKS
   function onKnightClick(e) {
     if (e) e.stopPropagation();
-    if (dead || busy) return;
+    if (!enabled || dead || busy) return;
     clicks++;
     if (clicks >= DEATH_CLICKS) { die(); return; }
     var r = REACTIONS[(Math.random() * REACTIONS.length) | 0];
@@ -277,11 +278,12 @@
   }
 
   document.addEventListener('click', function (e) {
+    if (!enabled) return;
     if (bypass) { bypass = false; return; }
     if (e.defaultPrevented) return;
     if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
     var t = e.target.closest ? e.target.closest('a[href], button') : null;
-    if (!t || t.closest('#pix-avatar')) return;
+    if (!t || t.closest('#pix-avatar') || t.closest('#site-controls')) return;
     var info = buildAction(t);
     e.preventDefault();
     e.stopPropagation();
@@ -306,7 +308,19 @@
     face(true);
     playKnight('idle');
     setHittable(true);
+    if (!enabled && knightAnim) knightAnim.stop();
   }
+
+  window.__knightSet = function (on) {
+    enabled = on;
+    if (on) { reset(); }
+    else {
+      if (knightAnim) knightAnim.stop();
+      stopTrail();
+      if (raf) { cancelAnimationFrame(raf); raf = null; }
+      busy = false;
+    }
+  };
 
   preload();
   reset();
