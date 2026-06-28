@@ -161,9 +161,9 @@
       var href = t.getAttribute('href');
       if (href && href.charAt(0) === '#') return { kind: 'hash', href: href };
       if (t.target === '_blank') {
-        var w = window.open('', '_blank');
+        var w = window.open(t.href, '_blank');   // open the real URL now (gesture-safe), no blank-tab limbo
         if (w) { try { w.opener = null; } catch (_) {} }
-        return { kind: 'blank', win: w, href: t.href };
+        return { kind: 'opened' };
       }
       return { kind: 'nav', href: t.href };
     }
@@ -175,9 +175,7 @@
         var d = document.getElementById(info.href.slice(1));
         if (d) d.scrollIntoView({ behavior: 'smooth' });
         return false;
-      case 'blank':
-        if (info.win) info.win.location = info.href; else window.open(info.href, '_blank');
-        return false;
+      case 'opened': return false;   // new-tab link already opened in buildAction
       case 'nav': window.location.href = info.href; return true;
       case 'button': bypass = true; t.click(); return false;
     }

@@ -15,7 +15,7 @@ Before this I was a designer at NetherRealm Studios on Mortal Kombat: Onslaught,
 
 In my free time I build my own games, run marathons, and study languages.
 
-[Download my résumé](https://drive.google.com/file/d/18WpJPNb7b5J_euQh8_YCxk6d3zXE9VBC/view?usp=drive_link)
+[Download my résumé]({{ site.resume_url | relative_url }})
 
 ## Career
 
