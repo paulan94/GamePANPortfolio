@@ -164,7 +164,7 @@ section.block { padding-top: clamp(58px, 8vw, 104px); padding-bottom: clamp(20px
 /* ---------------- featured project ---------------- */
 .feature { padding-top: clamp(46px, 7vw, 84px); }
 
-.feature-link { display: block; color: var(--ink); }
+.feature-link { display: block; color: var(--ink); max-width: 560px; }
 
 .feature-media { border-radius: 14px; overflow: hidden; border: 1px solid var(--hair); background: var(--surface); aspect-ratio: 1600/720; }
 
