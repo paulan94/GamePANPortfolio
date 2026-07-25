@@ -8,7 +8,7 @@
     {%- endif -%}
     <a class="work-card" data-cat="{{ project.category }}" href="{{ url }}">
       <div class="work-card-media">
-        {%- if project.image -%}<img src="{{ project.image }}" alt="{{ project.name }}" loading="lazy">{%- endif -%}
+        {%- if project.image -%}{%- assign card_img = project.image -%}{%- unless card_img contains '://' -%}{%- assign card_img = card_img | relative_url -%}{%- endunless -%}<img src="{{ card_img }}" alt="{{ project.name }}" loading="lazy">{%- endif -%}
       </div>
       <div class="work-card-body">
         <h3 class="work-card-title">{{ project.name }}</h3>

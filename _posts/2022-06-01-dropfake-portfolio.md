@@ -12,6 +12,8 @@ permalink: /blog/dropfake-portfolio
 
 # Senior Combat Designer - Drop Fake
 
+{% include elements/figure.html image="/assets/img/dcko-hero.webp" caption="DCKO, a DC Comics tag-team mobile fighter" %}
+
 I design combat kits and the systems that support them for a DC Comics licensed tag-team mobile fighting game. I own features from concept through playable prototype, tuning, and handoff, and I lean on an engineering background to build tooling, debug scripts, and work directly in backend data when it moves the feature forward.
 
 ---
@@ -33,16 +35,6 @@ I've contributed across the full roster and the systems underneath it, from conc
 **Progression and upgrade systems** I design -> document -> implement the systems that sit on top of individual kits. How a character deepens or shifts as players invest in them, including the milestone structure and the tunable thresholds engineers and content teams work against.
 
 **Team-level interaction systems** Because the game is built on tag-teaming, a lot of my design happens at the cross between two characters: how an off-field character contributes, what triggers a hand-off, and how to keep those interactions readable rather than a soup of hidden triggers. I've driven definition and rework of these shared systems in partnership with engineering and design direction, including making hard cuts when a mechanic was too opaque or too costly to support. (it always hurts)
-
----
-
-## How I think about design
-
-A short example of the judgment I bring, because it generalizes past any one character:
-
-Take a tool like an unblockable attack. As a baseline, always-available option, it reads as a raw-power tool: it belongs to an aggressive, damage-first identity. But the _same_ tool, gated behind sustain-oriented conditions (ramp-up time, staying in longer, thresholds on damage taken), flips its class read entirely: now it's a payoff for playing patiently and absorbing pressure, which is a completely different identity.
-
-The mechanic didn't change. The _conditions_ around it changed, and that's what determines which class a tool belongs to and how it should feel. Most of my kit work is this: not inventing novel effects, but deciding what an effect costs, what gates it, and what it sets up, so the identity, counterplay, and clarity all point the same direction.
 
 ---
 

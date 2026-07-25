@@ -144,6 +144,19 @@ section.block{padding-top:clamp(58px,8vw,104px);padding-bottom:clamp(20px,4vw,40
 @media(max-width:900px){.work-grid{grid-template-columns:1fr 1fr;gap:30px 22px}}
 @media(max-width:560px){.work-grid{grid-template-columns:1fr;gap:28px}}
 
+/* ---------------- featured project ---------------- */
+.feature{padding-top:clamp(46px,7vw,84px)}
+.feature-link{display:block;color:var(--ink)}
+.feature-media{border-radius:14px;overflow:hidden;border:1px solid var(--hair);background:var(--surface);aspect-ratio:1600/720}
+.feature-media img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s ease}
+.feature-link:hover .feature-media img{transform:scale(1.03)}
+.feature-cap{display:flex;flex-direction:column;gap:8px;margin-top:18px;max-width:760px}
+.feature-cap .mono{color:var(--accent)}
+.feature-desc{font-size:clamp(16px,1.8vw,19px);line-height:1.55;color:var(--muted)}
+.feature-desc strong{color:var(--ink);font-weight:600}
+.feature-more{color:var(--ink);border-bottom:1px solid var(--hair);white-space:nowrap}
+.feature-link:hover .feature-more{border-color:var(--accent);color:var(--accent)}
+
 /* ---------------- work / writing index ---------------- */
 .index{border-top:1px solid var(--hair)}
 .index-row{

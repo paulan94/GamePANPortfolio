@@ -16,7 +16,7 @@
     <div class="creds-grid">
       <div class="cred">
         <div class="label mono">Now</div>
-        <div class="val">AAA mobile<small>Fighting game · combat &amp; kits</small></div>
+        <div class="val">DCKO<small>DC Comics fighter · combat &amp; kits</small></div>
       </div>
       <div class="cred">
         <div class="label mono">Previously</div>
@@ -34,6 +34,18 @@
   </div>
 </div>
 
+<section class="wrap feature">
+  <a class="feature-link" href="{{ '/blog/dropfake-portfolio' | relative_url }}">
+    <div class="feature-media">
+      <img src="{{ '/assets/img/dcko-hero.webp' | relative_url }}" alt="DCKO, a DC Comics tag-team mobile fighter" loading="lazy">
+    </div>
+    <div class="feature-cap">
+      <span class="mono">Now shipping · DC Comics · my current project</span>
+      <p class="feature-desc"><strong>DCKO</strong>, a tag-team mobile fighter. I design its combat features and character kits. <span class="feature-more">Read the case study →</span></p>
+    </div>
+  </a>
+</section>
+
 <section class="wrap block" id="work">
   <div class="sec-head">
     <h2>Selected work</h2>
@@ -49,7 +61,7 @@
       {%- endif -%}
       <a class="work-card" data-cat="{{ project.category }}" href="{{ url }}">
         <div class="work-card-media">
-          {%- if project.image -%}<img src="{{ project.image }}" alt="{{ project.name }}" loading="lazy">{%- endif -%}
+          {%- if project.image -%}{%- assign card_img = project.image -%}{%- unless card_img contains '://' -%}{%- assign card_img = card_img | relative_url -%}{%- endunless -%}<img src="{{ card_img }}" alt="{{ project.name }}" loading="lazy">{%- endif -%}
         </div>
         <div class="work-card-body">
           <h3 class="work-card-title">{{ project.name }}</h3>
