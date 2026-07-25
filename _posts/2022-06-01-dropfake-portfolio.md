@@ -12,7 +12,7 @@ permalink: /blog/dropfake-portfolio
 
 # Senior Combat Designer - Drop Fake
 
-{% include elements/figure.html image="/assets/img/dcko-hero.webp" caption="DCKO, a DC Comics tag-team mobile fighter" %}
+{% include elements/figure.html image="/assets/img/dcko-splash.webp" caption="DCKO, a DC Comics tag-team mobile fighter" %}
 
 I design combat kits and the systems that support them for a DC Comics licensed tag-team mobile fighting game. I own features from concept through playable prototype, tuning, and handoff, and I lean on an engineering background to build tooling, debug scripts, and work directly in backend data when it moves the feature forward.
 

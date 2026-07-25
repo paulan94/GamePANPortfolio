@@ -34,26 +34,34 @@
   </div>
 </div>
 
-<section class="wrap feature">
-  <a class="feature-link" href="{{ '/blog/dropfake-portfolio' | relative_url }}">
-    <div class="feature-media">
-      <img src="{{ '/assets/img/dcko-hero.webp' | relative_url }}" alt="DCKO, a DC Comics tag-team mobile fighter" loading="lazy">
-    </div>
-    <div class="feature-cap">
-      <span class="mono">Now shipping · DC Comics · my current project</span>
-      <p class="feature-desc"><strong>DCKO</strong>, a tag-team mobile fighter. I design its combat features and character kits. <span class="feature-more">Read the case study →</span></p>
-    </div>
-  </a>
-</section>
-
 <section class="wrap block" id="work">
   <div class="sec-head">
     <h2>Selected work</h2>
     <a href="{{ '/projects/' | relative_url }}">All projects →</a>
   </div>
+
+  {%- assign sorted = site.projects | sort: 'order' -%}
+  {%- assign featured = sorted | first -%}
+  <a class="featured" href="{{ featured.case_study | relative_url }}">
+    <div class="featured-media">
+      <img src="{{ '/assets/img/dcko-splash.webp' | relative_url }}" alt="DCKO key art" loading="lazy">
+    </div>
+    <div class="featured-info">
+      <span class="mono featured-eyebrow">Featured · Now shipping</span>
+      <h3 class="featured-title">DCKO</h3>
+      <p class="featured-sub">DC Comics tag-team mobile fighter</p>
+      <p class="featured-desc">{{ featured.blurb }}</p>
+      <div class="featured-meta">
+        {%- if featured.role -%}<span class="role-pill">{{ featured.role }}</span>{%- endif -%}
+        {%- if featured.year -%}<span class="work-card-year">{{ featured.year }}</span>{%- endif -%}
+      </div>
+      <span class="featured-cta">Read the case study <span aria-hidden="true">→</span></span>
+    </div>
+  </a>
+
   <div class="work-grid">
-    {%- assign selected = site.projects | sort: 'order' -%}
-    {%- for project in selected limit:6 -%}
+    {%- for project in sorted limit:7 -%}
+      {%- unless forloop.first -%}
       {%- if project.case_study -%}
         {%- assign url = project.case_study | relative_url -%}
       {%- else -%}
@@ -73,6 +81,7 @@
           <div class="tags">{% for t in project.tools %}<span class="tag">{{ t }}</span>{% endfor %}</div>
         </div>
       </a>
+      {%- endunless -%}
     {%- endfor -%}
   </div>
 </section>
